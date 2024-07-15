@@ -7,21 +7,21 @@ public partial class Auction
 {
     public int AuctionId { get; set; }
 
-    public bool? IsActived { get; set; }
+    public bool? IsActived { get; set; } = false;
 
     public DateTime? EndDate { get; set; }
 
-    public int? Duration { get; set; }
+    public int? Duration { get; set; } = 0;
 
     public DateTime? StartDate { get; set; }
 
-    public int? Status { get; set; }
+    public int? Status { get; set; } = 0;
 
     public float? DepositPrice { get; set; }
 
     public int? Quantity { get; set; }
 
-    public bool? IsRejected { get; set; }
+    public bool? IsRejected { get; set; } = false;
 
     public string? RejecrReason { get; set; }
 
@@ -53,13 +53,13 @@ public partial class Auction
 
     public float? Valuation { get; set; }
 
-    public bool? IsExpired { get; set; }
+    public bool? IsExpired { get; set; } = false;
 
     public DateTime? ExpiredAt { get; set; }
 
     public string? ResponsibleBy { get; set; }
 
-    public bool? IsPaused { get; set; }
+    public bool? IsPaused { get; set; } = false;
 
     public string? PauseReason { get; set; }
 

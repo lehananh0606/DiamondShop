@@ -28,11 +28,6 @@ namespace Service.ViewModels.Request.Auctions
         [Range(0.01, double.MaxValue, ErrorMessage = "Bidding price must be greater than 0.")]
         public float BiddingPrice { get; set; }
 
-
-        [JsonIgnore]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-        public DateTime CreateAt { get; set; } = DateTime.Now;
-
         [JsonIgnore]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime UpdatedAt { get; set; } = DateTime.Now;

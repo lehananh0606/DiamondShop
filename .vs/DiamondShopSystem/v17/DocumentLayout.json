@@ -3,48 +3,40 @@
   "WorkspaceRootPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\hellojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\hellojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\monthlyat1amon1st.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\monthlyat1amon1st.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\everyminute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\everyminute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\everyday1amjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\everyday1amjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\hellojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\hellojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\viewmodels\\request\\auctions\\createauctionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\viewmodels\\request\\auctions\\createauctionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E49F5986-8CA1-40E1-A42A-2B9DB15652EC}|ShopRepository\\ShopRepository.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\shoprepository\\enums\\auctionenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E49F5986-8CA1-40E1-A42A-2B9DB15652EC}|ShopRepository\\ShopRepository.csproj|solutionrelative:shoprepository\\enums\\auctionenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\quartz\\servicecollectionquartzconfiguratorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\quartz\\servicecollectionquartzconfiguratorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{067F6973-E6FD-463C-A7E3-DF5C790060CE}|Service\\Service.csproj|solutionrelative:service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\diamondshopsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\diamondshopsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\diamondshopsystem.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\diamondshopsystem.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\extensions\\dependencyextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\extensions\\dependencyextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E49F5986-8CA1-40E1-A42A-2B9DB15652EC}|ShopRepository\\ShopRepository.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\shoprepository\\models\\diamondshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E49F5986-8CA1-40E1-A42A-2B9DB15652EC}|ShopRepository\\ShopRepository.csproj|solutionrelative:shoprepository\\models\\diamondshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\extensions\\exceptionmiddlewareextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\extensions\\exceptionmiddlewareextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|d:\\workspace\\c#\\prn231\\final project\\diamondshop\\diamondshopsystem\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F477C0F-9B5B-4644-8820-5E69B57F57A2}|DiamondShopSystem\\DiamondShopSystem.csproj|solutionrelative:diamondshopsystem\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,145 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Service",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj",
-              "RelativeDocumentMoniker": "Service\\Service.csproj",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj",
-              "RelativeToolTip": "Service\\Service.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-15T11:56:22.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceCollectionQuartzConfiguratorExtensions.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
-              "RelativeDocumentMoniker": "Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
-              "RelativeToolTip": "Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T11:51:29.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DiamondShopSystem",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\DiamondShopSystem.csproj",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
-              "RelativeToolTip": "DiamondShopSystem\\DiamondShopSystem.csproj",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-15T11:43:43.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "HelloJob.cs",
               "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\HelloJob.cs",
               "RelativeDocumentMoniker": "Service\\Quartz\\HelloJob.cs",
               "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\HelloJob.cs",
               "RelativeToolTip": "Service\\Quartz\\HelloJob.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T11:29:29.065Z",
+              "WhenOpened": "2024-07-15T17:52:19.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExceptionMiddlewareExtention.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Extensions\\ExceptionMiddlewareExtention.cs",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\Extensions\\ExceptionMiddlewareExtention.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Extensions\\ExceptionMiddlewareExtention.cs",
-              "RelativeToolTip": "DiamondShopSystem\\Extensions\\ExceptionMiddlewareExtention.cs",
+              "DocumentIndex": 5,
+              "Title": "CreateAuctionRequest.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\ViewModels\\Request\\Auctions\\CreateAuctionRequest.cs",
+              "RelativeDocumentMoniker": "Service\\ViewModels\\Request\\Auctions\\CreateAuctionRequest.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\ViewModels\\Request\\Auctions\\CreateAuctionRequest.cs",
+              "RelativeToolTip": "Service\\ViewModels\\Request\\Auctions\\CreateAuctionRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T10:49:30.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DependencyExtention.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Extensions\\DependencyExtention.cs",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\Extensions\\DependencyExtention.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Extensions\\DependencyExtention.cs",
-              "RelativeToolTip": "DiamondShopSystem\\Extensions\\DependencyExtention.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAhwBMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T10:49:15.156Z"
+              "WhenOpened": "2024-07-15T17:37:55.41Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DiamondShopSystem.http",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.http",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\DiamondShopSystem.http",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.http",
-              "RelativeToolTip": "DiamondShopSystem\\DiamondShopSystem.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-07-15T10:47:45.583Z",
+              "Title": "AuctionEnums.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\Enums\\AuctionEnums.cs",
+              "RelativeDocumentMoniker": "ShopRepository\\Enums\\AuctionEnums.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\Enums\\AuctionEnums.cs",
+              "RelativeToolTip": "ShopRepository\\Enums\\AuctionEnums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:32:58.217Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DiamondShopContext.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\Models\\DiamondShopContext.cs",
-              "RelativeDocumentMoniker": "ShopRepository\\Models\\DiamondShopContext.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\Models\\DiamondShopContext.cs",
-              "RelativeToolTip": "ShopRepository\\Models\\DiamondShopContext.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAmwCcAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T10:45:41.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuctionsController.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Controllers\\AuctionsController.cs",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\Controllers\\AuctionsController.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Controllers\\AuctionsController.cs",
-              "RelativeToolTip": "DiamondShopSystem\\Controllers\\AuctionsController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T10:37:17.254Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Program.cs",
-              "RelativeDocumentMoniker": "DiamondShopSystem\\Program.cs",
-              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Program.cs",
-              "RelativeToolTip": "DiamondShopSystem\\Program.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAQwEYAAAAAAAAA",
+              "Title": "EveryMinute.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\EveryMinute.cs",
+              "RelativeDocumentMoniker": "Service\\Quartz\\EveryMinute.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\EveryMinute.cs",
+              "RelativeToolTip": "Service\\Quartz\\EveryMinute.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwBQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T10:35:49.218Z",
+              "WhenOpened": "2024-07-15T17:31:18.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\appsettings.json",
               "RelativeDocumentMoniker": "DiamondShopSystem\\appsettings.json",
               "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\appsettings.json",
               "RelativeToolTip": "DiamondShopSystem\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-15T10:32:52.557Z",
+              "WhenOpened": "2024-07-15T17:30:41.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Program.cs",
+              "RelativeDocumentMoniker": "DiamondShopSystem\\Program.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\Program.cs",
+              "RelativeToolTip": "DiamondShopSystem\\Program.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAQwE4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:30:36.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonthlyAt1AMOn1st.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\MonthlyAt1AMOn1st.cs",
+              "RelativeDocumentMoniker": "Service\\Quartz\\MonthlyAt1AMOn1st.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\MonthlyAt1AMOn1st.cs",
+              "RelativeToolTip": "Service\\Quartz\\MonthlyAt1AMOn1st.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:22:16.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EveryDay1AmJob.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\EveryDay1AmJob.cs",
+              "RelativeDocumentMoniker": "Service\\Quartz\\EveryDay1AmJob.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\EveryDay1AmJob.cs",
+              "RelativeToolTip": "Service\\Quartz\\EveryDay1AmJob.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAuwC4AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:22:17.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceCollectionQuartzConfiguratorExtensions.cs",
+              "DocumentMoniker": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
+              "RelativeDocumentMoniker": "Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
+              "ToolTip": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
+              "RelativeToolTip": "Service\\Quartz\\ServiceCollectionQuartzConfiguratorExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:22:11.27Z",
               "EditorCaption": ""
             }
           ]

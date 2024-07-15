@@ -2,7 +2,7 @@
 
 namespace Service.Quartz
 {
-    public   class HelloJob : IJob
+    public class HelloJob : IJob
     {
         public async Task Execute(IJobExecutionContext context)
         {

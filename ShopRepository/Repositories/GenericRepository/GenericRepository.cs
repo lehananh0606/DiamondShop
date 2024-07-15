@@ -208,8 +208,11 @@ namespace ShopRepository.Repositories.GenericRepository
                 // Ensure the pageIndex and pageSize are valid
                 int validPageIndex = pageIndex.Value > 0 ? pageIndex.Value - 1 : 0;
                 int validPageSize = pageSize.Value > 0 ? pageSize.Value : 10; // Assuming a default pageSize of 10 if an invalid value is passed
-
-                query = query.Skip(validPageIndex * validPageSize).Take(validPageSize);
+                if (pageSize.Value > 0)
+                {
+                    query = query.Skip(validPageIndex * validPageSize).Take(validPageSize);
+                }
+                
             }
 
             return query.ToList();
