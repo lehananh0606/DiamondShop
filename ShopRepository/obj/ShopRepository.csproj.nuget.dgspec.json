@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Ki 8\\prn231\\New folder\\DiamondShopSystem\\ShopRepository\\ShopRepository.csproj": {}
+    "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {}
   },
   "projects": {
-    "E:\\Ki 8\\prn231\\New folder\\DiamondShopSystem\\ShopRepository\\ShopRepository.csproj": {
+    "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Ki 8\\prn231\\New folder\\DiamondShopSystem\\ShopRepository\\ShopRepository.csproj",
+        "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
         "projectName": "ShopRepository",
-        "projectPath": "E:\\Ki 8\\prn231\\New folder\\DiamondShopSystem\\ShopRepository\\ShopRepository.csproj",
-        "packagesPath": "C:\\Users\\MSI GF63\\.nuget\\packages\\",
-        "outputPath": "E:\\Ki 8\\prn231\\New folder\\DiamondShopSystem\\ShopRepository\\obj\\",
+        "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Software\\VS\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MSI GF63\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -93,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

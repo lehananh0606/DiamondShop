@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Service
-build_property.ProjectDir = E:\Ki 8\prn231\New folder\DiamondShopSystem\Service\
+build_property.ProjectDir = D:\workspace\C#\prn231\final project\DiamondShop\Service\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
