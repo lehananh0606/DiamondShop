@@ -1,5 +1,6 @@
 ﻿using Service.Commons;
 using Service.ViewModels.Request;
+using Service.ViewModels.Request.Auctions;
 using Service.ViewModels.Request.Order;
 using Service.ViewModels.Response;
 using System;
@@ -15,5 +16,7 @@ namespace Service.IServices
         public Task<OperationResult<List<OrderResponse>>> GetAll(GetAllOrder request);
         public Task<OperationResult<OrderResponse>> GetById(int id);
         public Task<OperationResult<bool>> CreateEntity(CreateOrderRequest request);
+        public Task<OperationResult<bool>> UpdateOrder(int id, UpdateOrderRequest request);
+        public Task<OperationResult<bool>> DeleteOrder(int id);
     }
 }

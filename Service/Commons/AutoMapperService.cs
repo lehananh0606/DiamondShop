@@ -68,7 +68,7 @@ namespace Service.Commons
             //Order
             CreateMap<Order, OrderResponse>();
             CreateMap<CreateOrderRequest, Order>();
-
+            CreateMap<UpdateOrderRequest, Order>();
 
         }
     }

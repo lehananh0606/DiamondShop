@@ -1,9 +1,3 @@
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.AssemblyReference.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.GeneratedMSBuildEditorConfig.editorconfig
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfoInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfo.cs
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CoreCompileInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cache
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\appsettings.Development.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\appsettings.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.exe
@@ -11,6 +5,7 @@ E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\D
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.runtimeconfig.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.pdb
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.xml
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Azure.Core.dll
@@ -152,6 +147,14 @@ E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\S
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Service.pdb
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.pdb
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.AssemblyReference.cache
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfoInputs.cache
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfo.cs
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CoreCompileInputs.cache
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cs
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cache
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.sourcelink.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.build.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.development.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.DiamondShopSystem.Microsoft.AspNetCore.StaticWebAssets.props
@@ -163,9 +166,7 @@ E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\s
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CopyComplete
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\refint\DiamondShopSystem.dll
+E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.xml
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.pdb
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.genruntimeconfig.cache
 E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\ref\DiamondShopSystem.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.xml
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cs
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.xml
