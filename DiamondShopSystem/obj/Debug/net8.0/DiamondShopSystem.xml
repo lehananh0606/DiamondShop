@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiamondShopSystem</name>
+    </assembly>
+    <members>
+        <member name="M:DiamondShopSystem.Controllers.AuctionsController.GetAll(Service.ViewModels.Request.GetAllAuctions)">
+            <summary>
+            
+            Get all auctions
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.AuctionsController.GetProductById(System.Int32)">
+            <summary>
+            Get auction by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.AuctionsController.StaffUpdate(System.Int32,Service.ViewModels.Request.Auctions.StaffUpdate)">
+            <summary>
+            Update an auction by Id
+            </summary>
+            <param name="id"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.AuthenticationsController.PostLoginAsync(Service.ViewModels.Request.AccountRequest)">
+             <summary>
+             Login to access into the system by your account.
+             </summary>
+             <param name="account">
+             Account object contains Email property and Password property. 
+             Notice that the password must be hashed with MD5 algorithm before sending to Login API.
+             </param>
+             <returns>
+             An Object with a json format that contains Account Id, Email, Role name, and a pair token (access token, refresh token).
+             </returns>
+             <remarks>
+                 Sample request:
+            
+                     POST 
+                     {
+                         "email": "abc@gmail.com"
+                         "password": "********"
+                     }
+             </remarks>
+             <response code="200">Login Successfully.</response>
+             <response code="400">Some Error about request data and logic data.</response>
+             <response code="404">Some Error about request data not found.</response>
+             <response code="500">Some Error about the system.</response>
+             <exception cref="T:Service.Exceptions.BadRequestException">Throw Error about request data and logic bussiness.</exception>
+             <exception cref="T:Service.Exceptions.NotFoundException">Throw Error about request data that are not found.</exception>
+             <exception cref="T:System.Exception">Throw Error about the system.</exception>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.AuthenticationsController.PostReGenerateTokensAsync(Service.ViewModels.AccountToken.AccountTokenRequest)">
+             <summary>
+             Re-generate pair token from the old pair token that are provided by the MBKC system before.
+             </summary>
+             <param name="accountToken">
+             AccountToken Object contains access token property and refresh token property.
+             </param>
+             <returns>
+             The new pair token (Access token, Refresh token) to continue access into the MBKC system.
+             </returns>
+             <remarks>
+                 Sample request:
+            
+                     POST 
+                     {
+                         "accessToken": "abcxyz"
+                         "refreshToken": "klmnopq"
+                     }
+             </remarks>
+             <response code="200">Re-Generate Token Successfully.</response>
+             <response code="404">Some Error about request data that are not found.</response>
+             <response code="400">Some Error about request data and logic data.</response>
+             <response code="500">Some Error about the system.</response>
+             <exception cref="T:Service.Exceptions.NotFoundException">Throw Error about request data that are not found.</exception>
+             <exception cref="T:Service.Exceptions.BadRequestException">Throw Error about request data and logic bussiness.</exception>
+             <exception cref="T:System.Exception">Throw Error about the system.</exception>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.OrderController.GetAll(Service.ViewModels.Request.Order.GetAllOrder)">
+            <summary>
+            
+            Get all auctions
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiamondShopSystem.Controllers.OrderController.GetOrderById(System.Int32)">
+            <summary>
+            Get auction by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
