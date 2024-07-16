@@ -51,6 +51,16 @@ namespace ShopRepository.Repositories.Repository
             }
         }
 
+        public async Task<User?> GetByIdAsync(int id, params Expression<Func<User, object>>[] includeProperties)
+        {
+            IQueryable<User> query = _dbContext.Users;
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return await query.SingleOrDefaultAsync(e => e.UserId == id);
+        }
+
         public async Task<User> GetUserAsync(string email)
         {
             try

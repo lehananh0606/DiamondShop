@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Service.IServices
+    
 {
     public interface IUserService
     {

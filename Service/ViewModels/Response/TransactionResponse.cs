@@ -20,6 +20,7 @@ namespace Service.ViewModels.Response
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public string ModifiedBy { get; set; }
+        public string TransactionType { get; set; }
         public bool IsDeleted { get; set; }
         public int? WalletID { get; set; }
         public int? OrderID { get; set; }
