@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.Commons;
 using Service.IServices;
+using Service.Utils;
 using Service.ViewModels.Request;
 
 namespace DiamondShopSystem.Controllers
@@ -11,30 +12,46 @@ namespace DiamondShopSystem.Controllers
     public class PaymentController : ControllerBase
     {
         private readonly IVnPayService _vnPayService;
+        private readonly IUserService _userService;
+        private readonly IAuctionService _auctionService;
+        private readonly IOrderService _orderService;
 
-        public PaymentController(IVnPayService vnPayService)
+        public PaymentController(IVnPayService vnPayService, IUserService userService, IAuctionService auctionService, IOrderService orderService)
         {
             _vnPayService = vnPayService;
+            _userService = userService;
+            _auctionService = auctionService;
+            _orderService = orderService;
         }
-
         [HttpPost("create-payment-url")]
-        public IActionResult CreatePaymentUrl([FromBody] VnPaymentRequestModel model)
+        public async Task<IActionResult> CreatePaymentUrl([FromBody] VnPaymentRequestModel model)
         {
             if (model == null)
             {
                 return BadRequest("Invalid payment request model.");
             }
 
-            var paymentUrl = _vnPayService.CreatePaymentUrl(HttpContext, model);
+            try
+            {
+                var paymentUrl = await _vnPayService.CreatePaymentUrl(HttpContext, model);
 
-            return Ok(new { Url = paymentUrl });
+                return Ok(new { Url = paymentUrl });
+            }
+            catch (Exception ex)
+            {
+                string error = ErrorUtil.GetErrorString("Exception", ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, error);
+            }
         }
 
+
+
+
         [HttpGet("payment-execute")]
-        public IActionResult PaymentExecute()
+        public async Task<IActionResult> PaymentExecute()
         {
             var query = Request.Query;
-            var paymentResponse = _vnPayService.PaymentExecute(query);
+            var paymentResponse = await _vnPayService.PaymentExecute(query);
 
             if (!paymentResponse.Success)
             {
@@ -43,24 +60,25 @@ namespace DiamondShopSystem.Controllers
 
             return Ok(paymentResponse);
         }
+
         [HttpGet("payment/payment-callback")] // Unique route for PaymentCallBack
        
         public IActionResult PaymentCallBack()
         {
-            var response = _vnPayService.PaymentExecute(Request.Query);
+            var response = _vnPayService.PaymentExecute(Request.Query).Result;
 
             if (response == null || response.VnPayResponseCode != "00")
             {
                 return RedirectToAction(nameof(PaymentFail));
             }
 
-            // save payment
-            //var responsePayment = _vnPayService.DepositPayment(response).Result;
+            //save payment
+            var responsePayment = _vnPayService.DepositPayment(response).Result;
 
-            //if (responsePayment.IsError)
-            //{
-            //    return RedirectToAction(nameof(PaymentFail));
-            //}
+            if (responsePayment.IsError)
+            {
+                return RedirectToAction(nameof(PaymentFail));
+            }
 
             return RedirectToAction(nameof(PaymentSuccess));
         }
@@ -85,7 +103,7 @@ namespace DiamondShopSystem.Controllers
             {
                 StatusCode = Service.Commons.StatusCode.Ok,
                 Payload = true,
-                Message = "Nạp tiền thành công!"
+                Message = "Thanh toán thành công!"
             };
             return Ok(response);
         }

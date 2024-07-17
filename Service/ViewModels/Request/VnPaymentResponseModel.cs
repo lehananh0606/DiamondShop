@@ -14,14 +14,14 @@ namespace Service.ViewModels.Request
         public string BankCode { get; set; }
         public string BankTranNo { get; set; }
         public string CardType { get; set; }
-        public double Amount { get; set; }
+        public float Amount { get; set; }
         public string Token { get; set; }
         public string VnPayResponseCode { get; set; }
     }
     public class VnPaymentRequestModel
     {
-        public int WalletId { get; set; }
-        public double Amount { get; set; }
+        public int AuctionId { get; set; }
+        public float Amount { get; set; }
 
         public DateTime CreatedDate
         {
@@ -35,7 +35,7 @@ namespace Service.ViewModels.Request
         public int? WalletId { get; init; }
         public FromToWallet From { get; init; }
         public FromToWallet To { get; init; }
-        public decimal Amount { get; init; }
+        public float Amount { get; init; }
         public PaymentMethod Type { get; init; }
     };
 }

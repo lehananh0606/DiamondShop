@@ -38,6 +38,34 @@ namespace ShopRepository.Repositories.Repository
             }
         }
 
+        public async Task<User> GetUserByNameAsync(string name)
+        {
+            try
+            {
+                return await _dbContext.Users
+                    .Include(x => x.Role)
+                    .SingleOrDefaultAsync(x => x.Name == name && x.Status != (int)CustomerStatus.Status.DISABLE);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<List<User>> GetUsersByCreatedByAsync(string createdBy)
+        {
+            try
+            {
+                return await _dbContext.Users
+                                       .Where(x => x.CreatedBy == createdBy)
+                                       .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<User> GetUserAsyncUpdate(int accountId)
         {
             try

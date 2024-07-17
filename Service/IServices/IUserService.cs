@@ -1,5 +1,7 @@
-﻿using Service.ViewModels.Request;
+﻿using Service.Commons;
+using Service.ViewModels.Request;
 using Service.ViewModels.Request.User;
+using Service.ViewModels.Response;
 using Service.ViewModels.Response.User;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,8 @@ namespace Service.IServices
         public Task<GetUserResponse> GetUserAsync(GetUserRequest getUserRequest, IEnumerable<Claim> claims);
         // public Task<UserResponse> GetCashierReportAsync(IEnumerable<Claim> claims);
         public Task<UserResponse> GetAccountAsync(int id, IEnumerable<Claim> claims);
+        public Task<OperationResult<UserResponse>> GetUserByName(string name);
+        public Task<OperationResult<UserResponse>> GetUserByCreatedBy(string createdBy);
         public Task CreateUserAsync(CreateUserRequest createUserRequest, IEnumerable<Claim> claims);
         //public Task<UserResponse> GetCashierAsync(int idCashier, IEnumerable<Claim> claims);
         public Task UpdateUserAsync(int id, UpdateUserRequest updateUserRequest, IEnumerable<Claim> claims);

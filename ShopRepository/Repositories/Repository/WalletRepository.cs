@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ShopRepository.Enums;
 
 namespace ShopRepository.Repositories.Repository
 {
@@ -32,6 +33,9 @@ namespace ShopRepository.Repositories.Repository
                 .Where(a => a.UserId == accountId)
                 .FirstOrDefaultAsync();
         }
+
+       
+
 
         public async Task<Wallet> UpdateBalance(int walletId, decimal balance)
         {

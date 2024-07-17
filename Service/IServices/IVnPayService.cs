@@ -12,10 +12,10 @@ namespace Service.IServices
 {
     public interface IVnPayService
     {
-        string CreatePaymentUrl(HttpContext context, VnPaymentRequestModel model);
-        VnPaymentResponseModel PaymentExecute(IQueryCollection collections);
+        Task<string> CreatePaymentUrl(HttpContext context, VnPaymentRequestModel model);
+        Task<VnPaymentResponseModel> PaymentExecute(IQueryCollection collections);
 
-       // Task<OperationResult<Transaction>> DepositPayment(VnPaymentResponseModel response);
+        Task<OperationResult<Transaction>> DepositPayment(VnPaymentResponseModel response);
 
     }
 }
