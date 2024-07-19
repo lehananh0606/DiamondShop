@@ -13,5 +13,6 @@ namespace Service.IServices
     {
         Task<OperationResult<WalletResponse>> GetWalletByUserId(int id);
         Task<OperationResult<WalletResponse>> UpdateWalletBalance(int walletId, float balance);
+        Task<OperationResult<WalletResponse>> GetWalletByUserIdAsync(string userId);
     }
 }

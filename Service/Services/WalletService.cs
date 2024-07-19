@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Service.Commons;
 using Service.IServices;
 using Service.Utils;
@@ -8,6 +9,7 @@ using Service.ViewModels.Response.User;
 using ShopRepository.Repositories.UnitOfWork;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -87,5 +89,64 @@ namespace Service.Services
                 return result;
             }
         }
+
+        public async Task<OperationResult<WalletResponse>> GetWalletByUserIdAsync(string token)
+        {
+            var result = new OperationResult<WalletResponse>();
+
+            try
+            {
+                var key = Encoding.ASCII.GetBytes("your_secret_key_here");
+                var handler = new JwtSecurityTokenHandler();
+                var tokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                };
+
+                var principal = handler.ValidateToken(token, tokenValidationParameters, out var securityToken);
+
+                if (securityToken is JwtSecurityToken jwtToken)
+                {
+                    var userId = principal.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+
+                    if (int.TryParse(userId, out int parsedUserId))
+                    {
+                        var wallet = await _unitOfWork.WalletRepository.GetWalletByAccountIdAsync(parsedUserId);
+
+                        if (wallet != null)
+                        {
+                            var walletResponse = _mapper.Map<WalletResponse>(wallet);
+                            result.Payload = walletResponse;
+                            result.Message = "Wallet retrieved successfully.";
+                        }
+                        else
+                        {
+                            result.AddError(StatusCode.NotFound, "Wallet", $"Wallet for user '{parsedUserId}' not found.");
+                        }
+                    }
+                    else
+                    {
+                        result.AddError(StatusCode.BadRequest, "Token", "Invalid user ID format.");
+                    }
+                }
+                else
+                {
+                    result.AddError(StatusCode.BadRequest, "Token", "Invalid token format.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving the wallet.");
+                result.AddError(StatusCode.ServerError, "Exception", "An unexpected error occurred.");
+            }
+
+            return result;
+        }
+
     }
 }

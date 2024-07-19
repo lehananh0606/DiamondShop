@@ -50,22 +50,38 @@ namespace Service.Commons
 
         private void HandleError(int code, string field, string description)
         {
+            // Find existing error entry or create a new one if it doesn't exist
             var error = Errors.Find(e => e.StatusCode == code);
             if (error == null)
             {
-                error = new Error { StatusCode = code };
+                error = new Error { StatusCode = code, Message = new List<ErrorDetail>() };
                 Errors.Add(error);
             }
-            var errorDetail = error.Message.Find(ed => ed.FieldNameError == field);
+
+            // Find existing error detail or create a new one if it doesn't exist
+            var errorDetail = error.Message?.Find(ed => ed.FieldNameError == field);
             if (errorDetail == null)
             {
-                errorDetail = new ErrorDetail { FieldNameError = field };
+                errorDetail = new ErrorDetail
+                {
+                    FieldNameError = field,
+                    DescriptionError = new List<string>()
+                };
+                // Initialize Message if it was null
+                if (error.Message == null)
+                {
+                    error.Message = new List<ErrorDetail>();
+                }
                 error.Message.Add(errorDetail);
             }
+
+            // Add description to the error detail
             errorDetail.DescriptionError.Add(description);
+
+            // Mark the result as an error
             IsError = true;
         }
-        
+
         public void AddValidationError(string field, string description)
         {
             HandleError((int)StatusCode.UnknownError, field, description);
