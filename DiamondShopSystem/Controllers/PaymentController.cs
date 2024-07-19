@@ -4,6 +4,8 @@ using Service.Commons;
 using Service.IServices;
 using Service.Utils;
 using Service.ViewModels.Request;
+using ShopRepository.Enums;
+using ShopRepository.Repositories.UnitOfWork;
 
 namespace DiamondShopSystem.Controllers
 {
@@ -15,13 +17,15 @@ namespace DiamondShopSystem.Controllers
         private readonly IUserService _userService;
         private readonly IAuctionService _auctionService;
         private readonly IOrderService _orderService;
+        private readonly UnitOfWork _unitOfWork;
 
-        public PaymentController(IVnPayService vnPayService, IUserService userService, IAuctionService auctionService, IOrderService orderService)
+        public PaymentController(IVnPayService vnPayService, IUserService userService, IAuctionService auctionService, IOrderService orderService, IUnitOfWork unitOfWork)
         {
             _vnPayService = vnPayService;
             _userService = userService;
             _auctionService = auctionService;
             _orderService = orderService;
+            _unitOfWork = (UnitOfWork)unitOfWork;
         }
         [HttpPost("create-payment-url")]
         public async Task<IActionResult> CreatePaymentUrl([FromBody] VnPaymentRequestModel model)
