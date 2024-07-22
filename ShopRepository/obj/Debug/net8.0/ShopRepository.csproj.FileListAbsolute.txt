@@ -7,6 +7,7 @@ E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\Shop
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfoInputs.cache
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfo.cs
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.CoreCompileInputs.cache
+E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.sourcelink.json
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\refint\ShopRepository.dll
 E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.pdb

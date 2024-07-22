@@ -57,11 +57,11 @@ namespace DiamondShopSystem
                 }));
 
             // Add DbContext with SQL Server configuration
+            string dbContext = builder.Configuration.GetConnectionString("MyDB");
             builder.Services.AddDbContext<DiamondShopContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("MyDB"));
             });
-
             // Fluent Validation
             builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AccountRequestValidator>());
             builder.Services.AddValidatorsFromAssemblyContaining<AccountTokenValidator>();

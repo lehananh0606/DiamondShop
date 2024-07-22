@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
 using Service.Commons;
+using Service.Exceptions;
 using Service.IServices;
+using Service.Utils;
 using Service.ViewModels.Request;
+using Service.ViewModels.Request.Auctions;
 using Service.ViewModels.Request.Order;
 using Service.ViewModels.Response;
 using ShopRepository.Enums;
@@ -52,7 +55,7 @@ namespace Service.Services
                 }
                 else
                 {
-                    result.AddError(StatusCode.BadRequest, "Create Auction", "Add Auction Failed!"); ;
+                    result.AddError(StatusCode.BadRequest, "Create Order", "Add Order Failed!"); ;
                 }
 
                 return result;
@@ -60,7 +63,7 @@ namespace Service.Services
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"Error occurred in Create Auction service method");
+                _logger.LogError(e, $"Error occurred in Create Order service method");
                 throw;
             }
         }
@@ -114,7 +117,7 @@ namespace Service.Services
                 }
                 else
 
-                if ((bool)entity.IsDeleted)
+                if (entity.IsDeleted == false)
                 {
                     var productResponse = _mapper.Map<OrderResponse>(entity);
                     result.AddResponseStatusCode(StatusCode.Ok, $"Get Order by Id: {id} Success!", productResponse);
@@ -127,5 +130,92 @@ namespace Service.Services
                 throw;
             }
         }
+
+
+
+        public async Task<OperationResult<bool>> UpdateOrder(int id, UpdateOrderRequest request)
+        {
+            var result = new OperationResult<bool>();
+
+            try
+            {
+                var order = await _unitOfWork.OrderRepository.GetByIdAsync(id);
+
+                if (order == null)
+                {
+                    result.AddError(StatusCode.NotFound, "Order Id", $"Cannot find Order with Id: {id}");
+                    return result;
+                }
+
+                //if (auction.Status != (int)OrderEnums.Status.PENDING)
+                //{
+                //    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+                //}
+
+                // Update auction fields using ReflectionUtils
+                ReflectionUtils.UpdateFields(request, order);
+
+                // Set the status to EVALUATE
+                //auction.Status = (int?)OrderEnums.Status.EVALUATE;
+
+                await _unitOfWork.OrderRepository.UpdateAsync(order);
+                var checkResult = _unitOfWork.Save();
+
+                if (checkResult > 0)
+                {
+                    result.AddResponseStatusCode(StatusCode.Ok, "Update Order Success!", true);
+                }
+                else
+                {
+                    result.AddError(StatusCode.BadRequest, "Update Order", "Update Order Failed!");
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, $"Error occurred in Update Order service method for ID: {id}");
+                throw;
+            }
+        }
+
+        public async Task<OperationResult<bool>> DeleteOrder(int id)
+        {
+            var result = new OperationResult<bool>();
+
+            try
+            {
+                var order = await _unitOfWork.OrderRepository.GetByIdAsync(id);
+
+                if (order == null)
+                {
+                    result.AddError(StatusCode.NotFound, "Order Id", $"Cannot find Order with Id: {id}");
+                    return result;
+                }
+
+                // Set the status to EVALUATE
+                order.IsDeleted = true;
+               
+                await _unitOfWork.OrderRepository.UpdateAsync(order);
+                var checkResult = _unitOfWork.Save();
+
+                if (checkResult > 0)
+                {
+                    result.AddResponseStatusCode(StatusCode.Ok, "Update Order Success!", true);
+                }
+                else
+                {
+                    result.AddError(StatusCode.BadRequest, "Update Order", "Update Order Failed!");
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, $"Error occurred in Update Order service method for ID: {id}");
+                throw;
+            }
+        }
+
     }
 }
