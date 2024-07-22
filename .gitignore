@@ -371,3 +371,5 @@ obj
 .env"*.dll" 
 "*.pdb" 
 "serviceAccountKey.json" 
+DiamondShopSystem/serviceAccountKey.json
+
