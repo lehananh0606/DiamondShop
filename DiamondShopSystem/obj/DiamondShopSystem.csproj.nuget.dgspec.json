@@ -195,6 +195,10 @@
               "target": "Package",
               "version": "[11.3.0, )"
             },
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
             "LinqKit": {
               "target": "Package",
               "version": "[1.3.0, )"
@@ -294,6 +298,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"

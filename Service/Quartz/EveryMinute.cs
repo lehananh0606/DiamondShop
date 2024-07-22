@@ -5,25 +5,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Google.Cloud.Firestore;
+using Service.IServices;
+using ShopRepository.Models;
 
 namespace Service.Quartz
 {
     public class EveryMinute : IJob
     {
+
         private readonly UnitOfWork _unitOfWork;
-        public EveryMinute(IUnitOfWork unitOfWork)
+        private readonly IFirebaseService<Auction> _firebaseAuctionService;
+        public EveryMinute(IUnitOfWork unitOfWork, IFirebaseService<Auction> firebaseService)
         {
             _unitOfWork = (UnitOfWork)unitOfWork;
+            _firebaseAuctionService = firebaseService;
         }
 
         public async Task Execute(IJobExecutionContext context)
         {
             Console.WriteLine("intro the EveryMinute");
 
+            var now = DateTime.UtcNow;
+
+            List<Auction> list = await _firebaseAuctionService.GetAuctions("test", 5, now);
+
+            Console.WriteLine("list-----", list);
             //var timeThresholdBefore = DateTime.Now.AddHours(-48);
+
+            await ExpiredAuction();
+
+        }
+
+        public async Task ExpiredAuction()
+        {
             var timeThreshold = DateTime.Now;
 
-            var statuses = new List<int?> { 5,6 };
+            var statuses = new List<int?> { 5, 6 };
 
             var auctions = _unitOfWork.AuctionRepository.Get(
                filter: u => statuses.Contains(u.Status)
@@ -51,7 +69,7 @@ namespace Service.Quartz
 
             await _unitOfWork.SaveChangesAsync();
 
-
         }
+
     }
 }

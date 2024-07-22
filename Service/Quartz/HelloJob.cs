@@ -10,7 +10,7 @@ namespace Service.Quartz
             string mess = string.Empty;
             try
             {
-                Console.WriteLine("hello");
+                //Console.WriteLine("hello");
             }
             catch (Exception)
             {
