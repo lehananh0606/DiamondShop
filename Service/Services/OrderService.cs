@@ -45,8 +45,6 @@ namespace Service.Services
 
                 entityOrder = await _unitOfWork.OrderRepository.AddAsync(entityOrder);
 
-               
-                
                 var checkResult = _unitOfWork.Save();
 
                 if (checkResult > 0)

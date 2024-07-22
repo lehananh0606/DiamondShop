@@ -13,7 +13,7 @@ using Service.ViewModels.Response;
 using ShopRepository.Enums;
 using ShopRepository.Models;
 using ShopRepository.Repositories.UnitOfWork;
-using System.Data.Entity.Infrastructure;
+using Google.Cloud.Firestore;
 
 namespace Service.Services;
 
@@ -22,6 +22,7 @@ public class AuctionService : IAuctionService
     private readonly ILogger<AuctionService> _logger;
     private readonly IMapper _mapper;
     private readonly UnitOfWork _unitOfWork;
+    FirestoreDb db;
 
     public AuctionService(IUnitOfWork unitOfWork, IMapper mapper, ILogger<AuctionService> logger)
     {
@@ -29,7 +30,7 @@ public class AuctionService : IAuctionService
         _mapper = mapper;
         _logger = logger;
     }
-    
+
     public async Task<OperationResult<List<AuctionResponse>>> GetAll(GetAllAuctions request)
     {
         var result = new OperationResult<List<AuctionResponse>>();
@@ -75,10 +76,11 @@ public class AuctionService : IAuctionService
             var entity = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
             if (entity == null)
             {
-                result.AddError(StatusCode.NotFound, "Auction Id",$"Can't found Auction with Id: {id}");
-            }else 
-            
-            if((bool)entity.IsActived)
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Can't found Auction with Id: {id}");
+            }
+            else
+
+            if ((bool)entity.IsActived)
             {
                 var productResponse = _mapper.Map<AuctionResponse>(entity);
                 result.AddResponseStatusCode(StatusCode.Ok, $"Get Auction by Id: {id} Success!", productResponse);
@@ -114,8 +116,14 @@ public class AuctionService : IAuctionService
             {
                 entityAuction.ProductImages.Add(productImage);
             }
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"serviceAccountKey.json";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+            db = FirestoreDb.Create("orchid-6cf91");
 
             var checkResult = _unitOfWork.Save();
+
+            DocumentReference docRef = db.Collection("test").Document(entityAuction.AuctionId.ToString());
+            WriteResult writeResult = await docRef.SetAsync(entityAuction);
 
             if (checkResult > 0)
             {
@@ -136,294 +144,234 @@ public class AuctionService : IAuctionService
         }
 
     }
-        public async Task<OperationResult<bool>> StaffUpdate(int id, StaffUpdate request)
-        {
-            var result = new OperationResult<bool>();
 
-            try
-            {
-                var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
-
-                if (auction == null)
-                {
-                    result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
-                    return result;
-                }
-
-                if (auction.Status != (int)AuctionEnums.Status.PENDING)
-                {
-                    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
-                }
-
-                // Update auction fields using ReflectionUtils
-                ReflectionUtils.UpdateFields(request, auction);
-
-                // Set the status to EVALUATE
-                auction.Status = (int?)AuctionEnums.Status.EVALUATE;
-
-                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                var checkResult = _unitOfWork.Save();
-
-                if (checkResult > 0)
-                {
-                    result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
-                }
-                else
-                {
-                    result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
-                }
-
-                return result;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
-                throw;
-            }
-        }
-
-
-        public async Task<OperationResult<bool>> AdminAprrove(int id, AdminApproveRequest request)
-        {
-            var result = new OperationResult<bool>();
-
-            try
-            {
-                var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
-
-                if (auction == null)
-                {
-                    result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
-                    return result;
-                }
-
-                if (auction.Status != (int)AuctionEnums.Status.CONFIRM)
-                {
-                    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
-                }
-
-                // Update auction fields using ReflectionUtils
-                ReflectionUtils.UpdateFields(request, auction);
-
-                // Set the status to EVALUATE
-                auction.Status = (int?)AuctionEnums.Status.APPROVE;
-
-                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                var checkResult = _unitOfWork.Save();
-
-                if (checkResult > 0)
-                {
-                    result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
-                }
-                else
-                {
-                    result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
-                }
-
-                return result;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
-                throw;
-            }
-        }
-
-        public async Task<OperationResult<bool>> StaffConfirm(int id, StaffConfirmRequest request)
-        {
-            var result = new OperationResult<bool>();
-
-            try
-            {
-                var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
-
-                if (auction == null)
-                {
-                    result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
-                    return result;
-                }
-
-                if (auction.Status != (int)AuctionEnums.Status.WAITING)
-                {
-                    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
-                }
-
-                // Update auction fields using ReflectionUtils
-                ReflectionUtils.UpdateFields(request, auction);
-
-                // Set the status to EVALUATE
-                auction.Status = (int?)AuctionEnums.Status.CONFIRM;
-                auction.EndDate = request.StartDate.AddMinutes((double)auction.Duration);
-
-                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                var checkResult = _unitOfWork.Save();
-
-                if (checkResult > 0)
-                {
-                    result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
-                }
-                else
-                {
-                    result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
-                }
-
-                return result;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
-                throw;
-            }
-        }
-
-        public async Task<OperationResult<bool>> UserWaiting(int id)
-        {
-            var result = new OperationResult<bool>();
-
-            try
-            {
-                var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
-
-                if (auction == null)
-                {
-                    result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
-                    return result;
-                }
-
-                if (auction.Status != (int)AuctionEnums.Status.EVALUATE)
-                {
-                    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
-                }
-
-                
-
-                // Set the status to WAITING
-                auction.Status = (int)AuctionEnums.Status.WAITING;
-
-                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                var checkResult = await _unitOfWork.SaveChangesAsync();  // Assuming SaveAsync() returns a Task<int>
-
-                if (checkResult > 0)
-                {
-                    result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
-                }
-                else
-                {
-                    result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
-                }
-
-                return result;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
-                throw;
-            }
-        }
-
-
-        public async Task<OperationResult<bool>> UserComming(int id)
-        {
-            var result = new OperationResult<bool>();
-
-            try
-            {
-                var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
-
-                if (auction == null)
-                {
-                    result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
-                    return result;
-                }
-
-                if (auction.Status != (int)AuctionEnums.Status.APPROVE)
-                {
-                    throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
-                }
-
-            
-
-                // Set the status to EVALUATE
-                auction.Status = (int?)AuctionEnums.Status.COMMING;
-                auction.IsActived = true;
-
-
-                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                var checkResult = _unitOfWork.Save();
-
-                if (checkResult > 0)
-                {
-                    result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
-                }
-                else
-                {
-                    result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
-                }
-
-                return result;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
-                throw;
-            }
-        }
-
-    public async Task<OperationResult<bool>> UpdateAuction(Auction auction)
+    public async Task<OperationResult<bool>> StaffUpdate(int id, StaffUpdate request)
     {
         var result = new OperationResult<bool>();
 
         try
         {
-            // Fetch the existing auction
-            var existingAuction = await _unitOfWork.AuctionRepository.GetByIdAsync(auction.AuctionId);
-            if (existingAuction == null)
+            var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
+
+            if (auction == null)
             {
-                // Auction not found, return error response
-                result.AddError(StatusCode.NotFound, "AuctionId", "Auction not found.");
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
                 return result;
             }
 
-            // Map the updates from the provided auction to the existing auction
-            // Ensure only necessary fields are updated
-            existingAuction.BiddingPrice = auction.BiddingPrice;
-            existingAuction.UpdateAt = DateTime.UtcNow; // Update timestamp or any other fields if needed
+            if (auction.Status != (int)AuctionEnums.Status.PENDING)
+            {
+                throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+            }
 
-            // Save the updated auction
-            await _unitOfWork.AuctionRepository.UpdateAsync(existingAuction);
-            var checkResult = _unitOfWork.Save(); // Ensure Save is awaited
+            // Update auction fields using ReflectionUtils
+            ReflectionUtils.UpdateFields(request, auction);
 
-            // Check if the update was successful
+            // Set the status to EVALUATE
+            auction.Status = (int?)AuctionEnums.Status.EVALUATE;
+
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            var checkResult = _unitOfWork.Save();
+
             if (checkResult > 0)
             {
-                result.AddResponseStatusCode(StatusCode.Ok, "Auction updated successfully", true);
+                result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
             }
             else
             {
-                result.AddError(StatusCode.BadRequest, "AuctionUpdate", "Failed to update the auction.");
+                result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
             }
-        }
-        catch (DbUpdateConcurrencyException ex)
-        {
-            // Handle concurrency issues
-            _logger.LogError(ex, "Concurrency error occurred while updating the auction.");
-            result.AddError(StatusCode.ServerError, "AuctionUpdate", "Data is updated by another user!");
-        }
-        catch (DbUpdateException ex)
-        {
-            // Handle data integrity issues
-            _logger.LogError(ex, "Data integrity error occurred while updating the auction.");
-            result.AddError(StatusCode.BadRequest, "AuctionUpdate", "Data integrity violation.");
-        }
-        catch (Exception ex)
-        {
-            // Handle any other exceptions
-            _logger.LogError(ex, "An unexpected error occurred.");
-            result.AddUnknownError("AuctionUpdate", "An unexpected error occurred.");
-        }
 
-        return result;
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
+            throw;
+        }
     }
 
+
+    public async Task<OperationResult<bool>> AdminAprrove(int id, AdminApproveRequest request)
+    {
+        var result = new OperationResult<bool>();
+
+        try
+        {
+            var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
+
+            if (auction == null)
+            {
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
+                return result;
+            }
+
+            if (auction.Status != (int)AuctionEnums.Status.CONFIRM)
+            {
+                throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+            }
+
+            // Update auction fields using ReflectionUtils
+            ReflectionUtils.UpdateFields(request, auction);
+
+            // Set the status to EVALUATE
+            auction.Status = (int?)AuctionEnums.Status.APPROVE;
+
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            var checkResult = _unitOfWork.Save();
+
+            if (checkResult > 0)
+            {
+                result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
+            }
+            else
+            {
+                result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
+            }
+
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
+            throw;
+        }
+    }
+
+    public async Task<OperationResult<bool>> StaffConfirm(int id, StaffConfirmRequest request)
+    {
+        var result = new OperationResult<bool>();
+
+        try
+        {
+            var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
+
+            if (auction == null)
+            {
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
+                return result;
+            }
+
+            if (auction.Status != (int)AuctionEnums.Status.WAITING)
+            {
+                throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+            }
+
+            // Update auction fields using ReflectionUtils
+            ReflectionUtils.UpdateFields(request, auction);
+
+            // Set the status to EVALUATE
+            auction.Status = (int?)AuctionEnums.Status.CONFIRM;
+            auction.EndDate = request.StartDate.AddMinutes((double)auction.Duration);
+
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            var checkResult = _unitOfWork.Save();
+
+            if (checkResult > 0)
+            {
+                result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
+            }
+            else
+            {
+                result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
+            }
+
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
+            throw;
+        }
+    }
+
+    public async Task<OperationResult<bool>> UserWaiting(int id)
+    {
+        var result = new OperationResult<bool>();
+
+        try
+        {
+            var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
+
+            if (auction == null)
+            {
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
+                return result;
+            }
+
+            if (auction.Status != (int)AuctionEnums.Status.EVALUATE)
+            {
+                throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+            }
+
+            // Set the status to WAITING
+            auction.Status = (int)AuctionEnums.Status.WAITING;
+
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            var checkResult = await _unitOfWork.SaveChangesAsync();  // Assuming SaveAsync() returns a Task<int>
+
+            if (checkResult > 0)
+            {
+                result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
+            }
+            else
+            {
+                result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
+            }
+
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
+            throw;
+        }
+    }
+
+
+    public async Task<OperationResult<bool>> UserComming(int id)
+    {
+        var result = new OperationResult<bool>();
+
+        try
+        {
+            var auction = await _unitOfWork.AuctionRepository.GetByIdAsync(id);
+
+            if (auction == null)
+            {
+                result.AddError(StatusCode.NotFound, "Auction Id", $"Cannot find Auction with Id: {id}");
+                return result;
+            }
+
+            if (auction.Status != (int)AuctionEnums.Status.APPROVE)
+            {
+                throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
+            }
+
+            // Set the status to EVALUATE
+            auction.Status = (int?)AuctionEnums.Status.COMMING;
+            auction.IsActived = true;
+
+
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            var checkResult = _unitOfWork.Save();
+
+            if (checkResult > 0)
+            {
+                result.AddResponseStatusCode(StatusCode.Ok, "Update Auction Success!", true);
+            }
+            else
+            {
+                result.AddError(StatusCode.BadRequest, "Update Auction", "Update Auction Failed!");
+            }
+
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"Error occurred in Update Auction service method for ID: {id}");
+            throw;
+        }
+    }
 
 }

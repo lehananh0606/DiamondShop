@@ -7,8 +7,11 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Quartz;
+using Quartz.Impl.Matchers;
 using Service.Commons;
 using Service.IServices;
+using Service.Quartz;
 using Service.Services;
 using Service.Validate;
 using Service.ViewModels.AcountToken;
@@ -82,6 +85,18 @@ namespace DiamondShopSystem
             builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AccountRequestValidator>());
             builder.Services.AddValidatorsFromAssemblyContaining<AccountTokenValidator>();
 
+
+            builder.Services.AddQuartz(q =>
+            {
+                q.UseMicrosoftDependencyInjectionJobFactory();
+                q.AddJobAndTrigger<HelloJob>(builder.Configuration);
+                q.AddJobAndTrigger<EveryDay1AmJob>(builder.Configuration);
+                q.AddJobAndTrigger<MonthlyAt1AMOn1st>(builder.Configuration);
+                q.AddJobAndTrigger<EveryMinute>(builder.Configuration);
+
+
+            });
+            builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -14,6 +14,7 @@ using DiamondShopSystem.Middleware;
 using DiamondShopSystem.Contants;
 using Service.IServices;
 using Service.Services;
+using ShopRepository.Models;
 
 
 namespace DiamondShopSystem.Extensions
@@ -34,6 +35,8 @@ namespace DiamondShopSystem.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAuctionService, AuctionService>();
             services.AddScoped<IOrderService, OrderService>();
+            //services.AddScoped(typeof(IFirebaseService<>), typeof(FirebaseService<>));
+            services.AddScoped<IFirebaseService<Auction>, FirebaseService<Auction>>();
             services.AddScoped<IVnPayService, VnPayService>();
             services.AddScoped<IWalletService, WalletService>();
             services.AddScoped<IBidService, BidService>();

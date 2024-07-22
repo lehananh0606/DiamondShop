@@ -21,6 +21,9 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Bb]in/
+[Oo]bj/
+artifacts/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -97,6 +100,9 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+.dll
+.cache
+
 
 # Chutzpah Test files
 _Chutzpah*
@@ -365,7 +371,16 @@ FodyWeavers.xsd
 bin
 obj
 
-.env
-DiamondShopSystem/obj/
-Service/obj/
+
+.env"*.dll" 
+"*.pdb" 
+"serviceAccountKey.json" 
+DiamondShopSystem/serviceAccountKey.json
+Service/bin/
+Service/obj
+ShopRepository/bin/
 ShopRepository/obj/
+obj/
+bin/
+
+
