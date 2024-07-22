@@ -6,6 +6,8 @@ using Service.ViewModels.Request.Order;
 
 namespace DiamondShopSystem.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class OrderController : BaseController
     {
 
@@ -24,7 +26,7 @@ namespace DiamondShopSystem.Controllers
         /// <returns></returns>
         [HttpGet("orders")]
         // get all
-        public async Task<IActionResult> GetAll([FromQuery] GetAllOrder request)
+        public async Task<IActionResult> GetAll([FromQuery] GetAllBidRequest request)
         {
             var response = await _orderService.GetAll(request);
 

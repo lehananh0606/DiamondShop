@@ -13,7 +13,7 @@ namespace Service.IServices
 {
     public interface IOrderService
     {
-        public Task<OperationResult<List<OrderResponse>>> GetAll(GetAllOrder request);
+        public Task<OperationResult<List<OrderResponse>>> GetAll(GetAllBidRequest request);
         public Task<OperationResult<OrderResponse>> GetById(int id);
         
         public Task<OperationResult<bool>> CreateEntity(CreateOrderRequest request);

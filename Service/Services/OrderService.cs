@@ -68,7 +68,7 @@ namespace Service.Services
             }
         }
 
-        public async Task<OperationResult<List<OrderResponse>>> GetAll(GetAllOrder request)
+        public async Task<OperationResult<List<OrderResponse>>> GetAll(GetAllBidRequest request)
         {
             var result = new OperationResult<List<OrderResponse>>();
 

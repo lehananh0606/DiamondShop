@@ -27,6 +27,14 @@
             <param name="request"></param>
             <returns></returns>
         </member>
+        <member name="M:DiamondShopSystem.Controllers.AuctionsController.RegisterAuction(System.Int32,Service.ViewModels.Request.Auctions.RegisterAuctionDTO)">
+            <summary>
+            Register a user for an auction.
+            </summary>
+            <param name="id">Auction ID</param>
+            <param name="dto">Registration details</param>
+            <returns></returns>
+        </member>
         <member name="M:DiamondShopSystem.Controllers.AuthenticationsController.PostLoginAsync(Service.ViewModels.Request.AccountRequest)">
              <summary>
              Login to access into the system by your account.
@@ -82,7 +90,7 @@
              <exception cref="T:Service.Exceptions.BadRequestException">Throw Error about request data and logic bussiness.</exception>
              <exception cref="T:System.Exception">Throw Error about the system.</exception>
         </member>
-        <member name="M:DiamondShopSystem.Controllers.OrderController.GetAll(Service.ViewModels.Request.Order.GetAllOrder)">
+        <member name="M:DiamondShopSystem.Controllers.OrderController.GetAll(Service.ViewModels.Request.Order.GetAllBidRequest)">
             <summary>
             
             Get all auctions

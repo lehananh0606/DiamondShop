@@ -13,6 +13,7 @@ using Service.ViewModels.Response;
 using ShopRepository.Enums;
 using ShopRepository.Models;
 using ShopRepository.Repositories.UnitOfWork;
+using System.Data.Entity.Infrastructure;
 
 namespace Service.Services;
 
@@ -367,5 +368,62 @@ public class AuctionService : IAuctionService
                 throw;
             }
         }
+
+    public async Task<OperationResult<bool>> UpdateAuction(Auction auction)
+    {
+        var result = new OperationResult<bool>();
+
+        try
+        {
+            // Fetch the existing auction
+            var existingAuction = await _unitOfWork.AuctionRepository.GetByIdAsync(auction.AuctionId);
+            if (existingAuction == null)
+            {
+                // Auction not found, return error response
+                result.AddError(StatusCode.NotFound, "AuctionId", "Auction not found.");
+                return result;
+            }
+
+            // Map the updates from the provided auction to the existing auction
+            // Ensure only necessary fields are updated
+            existingAuction.BiddingPrice = auction.BiddingPrice;
+            existingAuction.UpdateAt = DateTime.UtcNow; // Update timestamp or any other fields if needed
+
+            // Save the updated auction
+            await _unitOfWork.AuctionRepository.UpdateAsync(existingAuction);
+            var checkResult = _unitOfWork.Save(); // Ensure Save is awaited
+
+            // Check if the update was successful
+            if (checkResult > 0)
+            {
+                result.AddResponseStatusCode(StatusCode.Ok, "Auction updated successfully", true);
+            }
+            else
+            {
+                result.AddError(StatusCode.BadRequest, "AuctionUpdate", "Failed to update the auction.");
+            }
+        }
+        catch (DbUpdateConcurrencyException ex)
+        {
+            // Handle concurrency issues
+            _logger.LogError(ex, "Concurrency error occurred while updating the auction.");
+            result.AddError(StatusCode.ServerError, "AuctionUpdate", "Data is updated by another user!");
+        }
+        catch (DbUpdateException ex)
+        {
+            // Handle data integrity issues
+            _logger.LogError(ex, "Data integrity error occurred while updating the auction.");
+            result.AddError(StatusCode.BadRequest, "AuctionUpdate", "Data integrity violation.");
+        }
+        catch (Exception ex)
+        {
+            // Handle any other exceptions
+            _logger.LogError(ex, "An unexpected error occurred.");
+            result.AddUnknownError("AuctionUpdate", "An unexpected error occurred.");
+        }
+
+        return result;
+    }
+
 
 }

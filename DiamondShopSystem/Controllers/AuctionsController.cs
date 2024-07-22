@@ -9,10 +9,12 @@ namespace DiamondShopSystem.Controllers
     {
         
         private readonly IAuctionService _auctionService;
+        private readonly IBidService _bidService;
 
-        public AuctionsController(IAuctionService auctionService)
+        public AuctionsController(IAuctionService auctionService, IBidService bidService)
         {
             _auctionService = auctionService;
+            _bidService = bidService;
         }
 
         /// <summary>
@@ -92,6 +94,27 @@ namespace DiamondShopSystem.Controllers
         {
             var response = await _auctionService.UserComming(id);
             return response.IsError ? HandleErrorResponse(response.Errors) : Ok(response);
+        }
+
+        /// <summary>
+        /// Register a user for an auction.
+        /// </summary>
+        /// <param name="id">Auction ID</param>
+        /// <param name="dto">Registration details</param>
+        /// <returns></returns>
+        [HttpPost("auctions/{id}/register")]
+        public async Task<IActionResult> RegisterAuction(int id, RegisterAuctionDTO dto)
+        {
+            var result = await _bidService.RegisterAuctionAsync(id, dto);
+
+            if (result)
+            {
+                return Ok(); // Successfully registered
+            }
+            else
+            {
+                return BadRequest(new { message = "Auction registration failed." }); // Registration failed
+            }
         }
 
 

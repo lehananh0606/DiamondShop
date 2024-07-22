@@ -9,6 +9,7 @@ using Service.ViewModels.Request.User;
 using Service.ViewModels.Response.User;
 using Service.ViewModels.Request.Auctions;
 using Service.ViewModels.Request.Order;
+using Service.ViewModels.Request.Bid;
 
 
 namespace Service.Commons
@@ -65,11 +66,18 @@ namespace Service.Commons
             CreateMap<UserWaitingRequest, Auction>();
             CreateMap<UserComming, Auction>();
 
+            CreateMap<AuctionResponse, Auction>();
+            
+
             //Order
             CreateMap<Order, OrderResponse>();
             CreateMap<CreateOrderRequest, Order>();
             CreateMap<UpdateOrderRequest, Order>();
 
+            //Biding
+            CreateMap<Bid, BidResponse>();
+            CreateMap<CreateBidRequest, Bid>();
+            CreateMap<UpdateBidRequest, Bid>();
         }
     }
 }

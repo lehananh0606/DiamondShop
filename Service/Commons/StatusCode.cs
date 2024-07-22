@@ -17,6 +17,7 @@ namespace Service.Commons
         UnAuthorize = 401,
         Forbidden = 403,
         UnknownError = 999,
-        Unauthorized = 1000
+        Unauthorized = 1000,
+        InternalServerError = 1001
     }
 }

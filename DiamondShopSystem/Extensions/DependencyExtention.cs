@@ -36,6 +36,8 @@ namespace DiamondShopSystem.Extensions
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IVnPayService, VnPayService>();
             services.AddScoped<IWalletService, WalletService>();
+            services.AddScoped<IBidService, BidService>();
+            services.AddScoped<IBidRepository, BidRepository>();
             return services;
         }
 
