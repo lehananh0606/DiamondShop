@@ -65,6 +65,13 @@ namespace Service.Commons
             CreateMap<UserWaitingRequest, Auction>();
             CreateMap<UserComming, Auction>();
 
+            CreateMap<Auction, AuctionRequest>().ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.HasValue ? src.EndDate.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
+                .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.HasValue ? src.StartDate.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
+                .ForMember(dest => dest.CreateAt, opt => opt.MapFrom(src => src.CreateAt.HasValue ? src.CreateAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
+                .ForMember(dest => dest.UpdateAt, opt => opt.MapFrom(src => src.UpdateAt.HasValue ? src.UpdateAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
+                .ForMember(dest => dest.RemindAt, opt => opt.MapFrom(src => src.RemindAt.HasValue ? src.RemindAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
+                .ForMember(dest => dest.ExpiredAt, opt => opt.MapFrom(src => src.ExpiredAt.HasValue ? src.ExpiredAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null)).ReverseMap();
+
             //Order
             CreateMap<Order, OrderResponse>();
             CreateMap<CreateOrderRequest, Order>();

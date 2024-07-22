@@ -1,88 +1,75 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Google.Cloud.Firestore;
+using ShopRepository.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Service.ViewModels.Request;
-
+[FirestoreData]
 public class AuctionRequest
 {
-    [Required] public bool IsActived { get; set; }
+    [FirestoreProperty]
+    public int AuctionId { get; set; }
 
-    [Required]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime EndDate { get; set; }
+    public bool? IsActived { get; set; } = false;
+    [FirestoreProperty]
+    public string? EndDate { get; set; }
+    [FirestoreProperty]
+    public int? Duration { get; set; } = 0;
+    [FirestoreProperty]
+    public string? StartDate { get; set; }
+    [FirestoreProperty]
+    public int? Status { get; set; } = 0;
+    [FirestoreProperty]
+    public float? DepositPrice { get; set; }
+    [FirestoreProperty]
+    public int? Quantity { get; set; }
 
-    [Required] public int Duration { get; set; }
+    public bool? IsRejected { get; set; } = false;
 
-    [Required]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime StartDate { get; set; }
+    public string? RejecrReason { get; set; }
 
+    public bool? IsDeleted { get; set; }
+    [FirestoreProperty]
+    public string? ProductName { get; set; }
 
-    [Required]
-    [Range(0.01, double.MaxValue, ErrorMessage = "Deposit price must be greater than 0.")]
-    public float DepositPrice { get; set; }
+    public string? ProductCode { get; set; }
+    [FirestoreProperty]
+    public string? Description { get; set; }
 
-    [Required]
-    [Range(1, int.MaxValue, ErrorMessage = "Quantity must be greater than 0.")]
-    public int Quantity { get; set; }
+    public string? CreateAt { get; set; }
 
-    public bool IsRejected { get; set; }
+    public string? UpdateAt { get; set; }
 
-    public string RejectReason { get; set; }
+    public string? CreatedBy { get; set; }
 
-    public bool IsDeleted { get; set; }
+    public string? ModifiedBy { get; set; }
 
-    [Required] public string ProductName { get; set; }
+    public float? StartPrice { get; set; }
 
-    [Required] public string ProductCode { get; set; }
+    public float? EndPrice { get; set; }
 
-    public string Description { get; set; }
+    public string? RemindAt { get; set; }
+    [FirestoreProperty]
+    public string? Title { get; set; }
+    [FirestoreProperty]
+    public float? BiddingPrice { get; set; }
 
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime CreateAt { get; set; } = DateTime.Now;
+    public float? Valuation { get; set; }
 
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime UpdateAt { get; set; } = DateTime.Now;
+    public bool? IsExpired { get; set; } = false;
 
-    [Required] public string CreatedBy { get; set; }
+    [FirestoreProperty]
+    public string? ExpiredAt { get; set; }
 
-    public string ModifiedBy { get; set; }
+    public string? ResponsibleBy { get; set; }
+    [FirestoreProperty]
+    public bool? IsPaused { get; set; } = false;
+    [FirestoreProperty]
+    public string? PauseReason { get; set; }
+    [FirestoreProperty]
+    public int? PauseDuration { get; set; }
+    [FirestoreProperty]
+    public virtual ICollection<Bid> Bids { get; set; } = new List<Bid>();
 
-
-    [Required]
-    [Range(0.01, double.MaxValue, ErrorMessage = "Start price must be greater than 0.")]
-    public float StartPrice { get; set; }
-
-    [Range(0.01, double.MaxValue, ErrorMessage = "End price must be greater than 0.")]
-    public float EndPrice { get; set; }
-
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime RemindAt { get; set; }
-
-    [Required] public string Title { get; set; }
-
-    [Range(0.01, double.MaxValue, ErrorMessage = "Bidding price must be greater than 0.")]
-    public float BiddingPrice { get; set; }
-
-    [Range(0.01, double.MaxValue, ErrorMessage = "Valuation must be greater than 0.")]
-    public float Valuation { get; set; }
-
-    public bool IsWon { get; set; }
-
-
-    public bool IsExpired { get; set; }
-
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime ExpiredAt { get; set; }
-
-    public string ResponsibleBy { get; set; }
-
-    public bool IsPaused { get; set; }
-
-    public string PauseReason { get; set; }
-
-    public int PauseDuration { get; set; }
-
-    public List<int> ProductImageIds { get; set; } // IDs of the associated product images
-    public List<int> BidIds { get; set; } // IDs of the associated bids
-    public int? OrderId { get; set; } // ID of the associated order, if any
+    [FirestoreProperty]
+    public virtual ICollection<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
 }

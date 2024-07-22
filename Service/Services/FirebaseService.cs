@@ -1,8 +1,11 @@
-﻿using Google.Cloud.Firestore;
+﻿using AutoMapper;
+using Google.Cloud.Firestore;
 using Service.Exceptions;
 using Service.IServices;
+using Service.ViewModels.Request;
 using ShopRepository.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +16,14 @@ namespace Service.Services
     public class FirebaseService<T>:IFirebaseService<T>
     {
         FirestoreDb dbFirestore;
-        public FirebaseService() 
+        private readonly IMapper _mapper;
+        public FirebaseService(IMapper mapper) 
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + @"serviceAccountKey.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             dbFirestore = FirestoreDb.Create("orchid-6cf91");
-
+            _mapper = mapper;
+            
 
         }
 
@@ -144,6 +149,33 @@ namespace Service.Services
                 Console.WriteLine($"Error getting auctions: {e.Message}");
                 throw;
             }
+        }
+
+        public async Task SaveAuction(Auction auction, long auctionId, string additionalInfo)
+        {
+
+            var autionFirebase = _mapper.Map<AuctionRequest>(auction);
+            try
+            {
+                DocumentReference docRef = dbFirestore.Collection(additionalInfo).Document(auctionId.ToString());
+                await docRef.SetAsync(autionFirebase);
+
+                //return (await docRef.GetSnapshotAsync()).UpdateTime.ToString();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error saving document: {e.Message}");
+                throw;
+            }
+        }
+
+        private DateTime EnsureUtcDateTime(DateTime dateTime)
+        {
+            if (dateTime.Kind != DateTimeKind.Utc)
+            {
+                return dateTime.ToUniversalTime();
+            }
+            return dateTime;
         }
 
 

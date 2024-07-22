@@ -45,7 +45,7 @@ namespace Service.Quartz
                 auction.UpdateAt = DateTime.Now;
 
                 Console.WriteLine(msg + " autionId " + auction.AuctionId);
-                _unitOfWork.AuctionRepository.Update(auction);
+                await _unitOfWork.AuctionRepository.UpdateAsync(auction);
             }
 
             await _unitOfWork.SaveChangesAsync();

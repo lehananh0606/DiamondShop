@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Google.Cloud.Firestore;
 using Service.IServices;
 using ShopRepository.Models;
+using Service.Contants;
+using Google.Api;
 
 namespace Service.Quartz
 {
@@ -37,42 +39,101 @@ namespace Service.Quartz
                 throw;
             }
             
-
+            
             //Console.WriteLine("list-----", list);
             //var timeThresholdBefore = DateTime.Now.AddHours(-48);
 
-            await ExpiredAuction();
+            await ExpiredCommingAuction();
+            await ExpiredBiddingAuction();
 
         }
-
-        public async Task ExpiredAuction()
+        private async Task ExpiredCommingAuction()
         {
             var timeThreshold = DateTime.Now;
 
-            var statuses = new List<int?> { 5, 6 };
+            var statuses = new List<int?> { 5 };
 
-            var auctions = _unitOfWork.AuctionRepository.Get(
-               filter: u => statuses.Contains(u.Status)
-               && u.IsActived == true
-               && u.IsRejected == false
-               && u.StartDate >= timeThreshold,
-
-               pageSize: -1
-            );
-
-            foreach (var auction in auctions)
+            try
             {
-                string msg = "update auction " + auction.AuctionId
-                    + " statusfrom: " + auction.Status;
+                var auctions = _unitOfWork.AuctionRepository.Get(
+                   filter: u => statuses.Contains(u.Status)
+                   && u.IsActived == true
+                   && u.IsRejected == false
+                   && u.StartDate <= timeThreshold,
+                   includeProperties: "Bids,ProductImages",
+                   pageSize: -1
+                );
 
-                auction.Status = auction.Status + 1;
+                foreach (var auction in auctions)
+                {
 
-                msg += " statusTo: " + auction.Status;
+                    string msg = "update auction " + auction.AuctionId
+                        + " statusfrom: " + auction.Status;
 
-                auction.UpdateAt = DateTime.Now;
+                    auction.Status = auction.Status + 1;
 
-                Console.WriteLine(msg);
-                _unitOfWork.AuctionRepository.Update(auction);
+                    msg += " statusTo: " + auction.Status;
+
+                    auction.UpdateAt = DateTime.Now;
+
+                    Console.WriteLine(msg);
+
+                    auction.EndDate = auction.StartDate.Value.AddMinutes(auction.Duration.HasValue ? (double)auction.Duration.Value : AUCTIONCONSTANT.VALUEAUCTION.MINDURATION);
+
+
+                    await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+                    await _firebaseAuctionService.SaveAuction(auction, auction.AuctionId, AUCTIONCONSTANT.COLLECTIONFIREBASE.AUCTIONS);
+
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: ", e.Message);
+            }
+
+            await _unitOfWork.SaveChangesAsync();
+
+        }
+        
+        private async Task ExpiredBiddingAuction()
+        {
+            var timeThreshold = DateTime.Now;
+
+            var statuses = new List<int?> { 6 };
+            
+            try
+            {
+                var auctions = _unitOfWork.AuctionRepository.Get(
+                   filter: u => statuses.Contains(u.Status)
+                   && u.IsActived == true
+                   && u.IsRejected == false
+                   && u.EndDate <= timeThreshold,
+                   includeProperties: "Bids,ProductImages",
+                   pageSize: -1
+                );
+
+                foreach (var auction in auctions)
+                {
+
+                    string msg = "update auction " + auction.AuctionId
+                        + " statusfrom: " + auction.Status;
+
+                    auction.Status = auction.Status + 1;
+
+                    msg += " statusTo: " + auction.Status;
+
+                    auction.UpdateAt = DateTime.Now;
+
+                    Console.WriteLine(msg);
+
+                    await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+                    await _firebaseAuctionService.SaveAuction(auction, auction.AuctionId, AUCTIONCONSTANT.COLLECTIONFIREBASE.AUCTIONS);
+                    
+                }
+            }
+            catch( Exception e)
+            {
+                Console.WriteLine("Exception: ", e.Message);
             }
 
             await _unitOfWork.SaveChangesAsync();

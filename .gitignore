@@ -379,4 +379,6 @@ Service/bin/
 Service/obj
 ShopRepository/bin/
 ShopRepository/obj/
+obj/
+bin/
 
