@@ -18,6 +18,8 @@ namespace Service.Services
             string path = AppDomain.CurrentDomain.BaseDirectory + @"serviceAccountKey.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             dbFirestore = FirestoreDb.Create("orchid-6cf91");
+
+
         }
 
 

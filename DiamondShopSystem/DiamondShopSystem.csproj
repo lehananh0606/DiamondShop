@@ -36,4 +36,9 @@
     <ProjectReference Include="..\ShopRepository\ShopRepository.csproj" />
   </ItemGroup>
 
+
+	<ItemGroup>
+	  <Folder Include="Resources\" />
+	</ItemGroup>
+
 </Project>

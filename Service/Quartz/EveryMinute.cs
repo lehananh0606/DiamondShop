@@ -28,9 +28,17 @@ namespace Service.Quartz
 
             var now = DateTime.UtcNow;
 
-            List<Auction> list = await _firebaseAuctionService.GetAuctions("test", 5, now);
+            try
+            {
+                List<Auction> list = await _firebaseAuctionService.GetAuctions("test", 5, now);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            
 
-            Console.WriteLine("list-----", list);
+            //Console.WriteLine("list-----", list);
             //var timeThresholdBefore = DateTime.Now.AddHours(-48);
 
             await ExpiredAuction();
