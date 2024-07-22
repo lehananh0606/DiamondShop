@@ -1,14 +1,17 @@
-﻿using System;
+﻿using Google.Cloud.Firestore;
+using System;
 using System.Collections.Generic;
 
 namespace ShopRepository.Models;
 
+[FirestoreData]
 public partial class ProductImage
 {
+    [FirestoreProperty]
     public int ProductImageId { get; set; }
-
+    [FirestoreProperty]
     public string? ImageUrl { get; set; }
-
+    [FirestoreProperty]
     public string? ImageCode { get; set; }
 
     public DateTime? CreatedAt { get; set; }
