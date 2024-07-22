@@ -12,7 +12,7 @@ namespace ShopRepository.Repositories.GenericRepository
         Task<List<TEntity>> GetAllAsync();
         Task<TEntity?> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includeProperties);
         Task<TEntity> AddAsync(TEntity entity);
-
+        
         IEnumerable<TEntity> Get(
            Expression<Func<TEntity, bool>> filter = null,
            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

@@ -12,5 +12,8 @@ namespace ShopRepository.Repositories.IRepository
 {
     public interface ITransactionRepository : IGenericRepository<Models.Transaction>
     {
+        Task<List<Models.Transaction>> GetAllTransactions(int walletId);
+        Task<List<Models.Transaction>> GetAllTransactionPayments();
+        Task<bool> AlreadyRefundedAsync(int orderId);
     }
 }

@@ -32,6 +32,10 @@ namespace ShopRepository.Repositories.UnitOfWork
         private UserRepository _userRepository;
 
         private WalletRepository _walletRepository;
+        public async Task<IDbContextTransaction> BeginTransactionAsync()
+        {
+            return await _dbContext.Database.BeginTransactionAsync();
+        }
 
         public UnitOfWork(IDbFactory dbFactory)
         {

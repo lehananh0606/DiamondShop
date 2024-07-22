@@ -23,9 +23,9 @@ public partial class Transaction
 
     public string? CreatedBy { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; } = DateTime.Now;
 
-    public DateTime? UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; } = DateTime.Now;
 
     public string? ModifiedBy { get; set; }
 
@@ -38,4 +38,6 @@ public partial class Transaction
     public virtual Order? Order { get; set; }
 
     public virtual Wallet? Wallet { get; set; }
+
+    public string? TransactionType {  get; set; }
 }

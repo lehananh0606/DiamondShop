@@ -14,6 +14,7 @@ namespace Service.IServices
     {
         public Task<OperationResult<List<AuctionResponse>>> GetAll(GetAllAuctions request);
         public Task<OperationResult<AuctionResponse>> GetById(int id);
+       
         public Task<OperationResult<bool>> CreateEntity(CreateAuctionRequest request);
 
         public Task<OperationResult<bool>> StaffUpdate(int id, StaffUpdate request);
