@@ -285,7 +285,7 @@ public class AuctionService : IAuctionService
         }
     }
 
-    public async Task<OperationResult<bool>> UserWaiting(int id, UserWaitingRequest request)
+    public async Task<OperationResult<bool>> UserWaiting(int id)
     {
         var result = new OperationResult<bool>();
 
@@ -303,9 +303,6 @@ public class AuctionService : IAuctionService
             {
                 throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
             }
-
-            // Update auction fields using ReflectionUtils
-            ReflectionUtils.UpdateFields(request, auction);
 
             // Set the status to WAITING
             auction.Status = (int)AuctionEnums.Status.WAITING;
@@ -332,7 +329,7 @@ public class AuctionService : IAuctionService
     }
 
 
-    public async Task<OperationResult<bool>> UserComming(int id, UserComming request)
+    public async Task<OperationResult<bool>> UserComming(int id)
     {
         var result = new OperationResult<bool>();
 
@@ -350,9 +347,6 @@ public class AuctionService : IAuctionService
             {
                 throw new BadRequestException("Auction is closed for edit because it is live and cannot be edited!");
             }
-
-            // Update auction fields using ReflectionUtils
-            ReflectionUtils.UpdateFields(request, auction);
 
             // Set the status to EVALUATE
             auction.Status = (int?)AuctionEnums.Status.COMMING;

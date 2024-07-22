@@ -81,16 +81,16 @@ namespace DiamondShopSystem.Controllers
 
 
         [HttpPut("auctions/set-waiting/{id}")]
-        public async Task<IActionResult> UserWaiting(int id, UserWaitingRequest request)
+        public async Task<IActionResult> UserWaiting(int id)
         {
-            var response = await _auctionService.UserWaiting(id, request);
+            var response = await _auctionService.UserWaiting(id);
             return response.IsError ? HandleErrorResponse(response.Errors) : Ok(response);
         }
 
         [HttpPut("auctions/set-comming/{id}")]
-        public async Task<IActionResult> UserComming(int id, UserComming request)
+        public async Task<IActionResult> UserComming(int id)
         {
-            var response = await _auctionService.UserComming(id, request);
+            var response = await _auctionService.UserComming(id);
             return response.IsError ? HandleErrorResponse(response.Errors) : Ok(response);
         }
 

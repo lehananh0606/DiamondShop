@@ -112,12 +112,12 @@ namespace Service.Services
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                new Claim(JwtRegisteredClaimNames.Sub, accountResponse.Email),
-                new Claim(JwtRegisteredClaimNames.Email, accountResponse.Email),
-                new Claim(JwtRegisteredClaimNames.Sid, accountResponse.UserId.ToString()),
-                new Claim("Role", accountResponse.RoleName),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            }),
+            new Claim(JwtRegisteredClaimNames.Sub, accountResponse.Email),
+            new Claim(JwtRegisteredClaimNames.Email, accountResponse.Email),
+            new Claim(JwtRegisteredClaimNames.Sid, accountResponse.UserId.ToString()),
+            new Claim(ClaimTypes.Role, accountResponse.RoleName), // Use ClaimTypes.Role for roles
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = credentials
             };
@@ -134,6 +134,7 @@ namespace Service.Services
 
             return accountResponse;
         }
+
 
 
         private string GenerateRefreshToken()

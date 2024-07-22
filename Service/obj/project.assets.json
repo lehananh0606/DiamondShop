@@ -5346,11 +5346,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj",
+      "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj",
+      "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\obj\\",
+      "outputPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Software\\VS\\Shared\\NuGetPackages"
@@ -5372,8 +5372,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
-              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj"
+            "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
+              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj"
             }
           }
         }

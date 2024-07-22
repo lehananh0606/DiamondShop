@@ -25,6 +25,7 @@ namespace Service.ViewModels.Response.User
         public string ModifiedBy { get; set; }
         public DateTime UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
+        public int WalletId {  get; set; }
         public int ModifiedVersion { get; set; }
         public AccountTokenResponse Tokens { get; set; }
     }

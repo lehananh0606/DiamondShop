@@ -14,13 +14,14 @@ namespace Service.IServices
     {
         public Task<OperationResult<List<AuctionResponse>>> GetAll(GetAllAuctions request);
         public Task<OperationResult<AuctionResponse>> GetById(int id);
+       
         public Task<OperationResult<bool>> CreateEntity(CreateAuctionRequest request);
 
         public Task<OperationResult<bool>> StaffUpdate(int id, StaffUpdate request);
         public Task<OperationResult<bool>> AdminAprrove(int id, AdminApproveRequest request);
         public Task<OperationResult<bool>> StaffConfirm(int id, StaffConfirmRequest request);
-        public Task<OperationResult<bool>> UserWaiting(int id, UserWaitingRequest request);
-        public Task<OperationResult<bool>> UserComming(int id, UserComming request);
+        public Task<OperationResult<bool>> UserWaiting(int id);
+        public Task<OperationResult<bool>> UserComming(int id);
 
     }
 }

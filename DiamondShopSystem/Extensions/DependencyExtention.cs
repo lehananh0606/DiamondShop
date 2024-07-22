@@ -37,6 +37,8 @@ namespace DiamondShopSystem.Extensions
             services.AddScoped<IOrderService, OrderService>();
             //services.AddScoped(typeof(IFirebaseService<>), typeof(FirebaseService<>));
             services.AddScoped<IFirebaseService<Auction>, FirebaseService<Auction>>();
+            services.AddScoped<IVnPayService, VnPayService>();
+            services.AddScoped<IWalletService, WalletService>();
             return services;
         }
 

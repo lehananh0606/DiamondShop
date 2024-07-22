@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Service.Commons;
 using Service.Contants;
 using Service.Exceptions;
 using Service.IServices;
@@ -305,6 +306,69 @@ namespace Service.Services
             catch (Exception ex)
             {
                 throw new Exception("Error deleting user: " + ex.Message);
+            }
+        }
+
+        public async Task<OperationResult<UserResponse>> GetUserByCreatedBy(string createdBy)
+        {
+            var result = new OperationResult<UserResponse>();
+
+            try
+            {
+                var users = await _unitOfWork.UserRepository.GetUsersByCreatedByAsync(createdBy);
+                if (users == null || !users.Any())
+                {
+                    result.AddError(StatusCode.NotFound, "Users", "No users found created by the specified user.");
+                    return result;
+                }
+
+                var userResponses = _mapper.Map<List<UserResponse>>(users);
+                result.Payload = userResponses.FirstOrDefault(); // Assuming you want to return the first user found
+                result.Message = "Users retrieved successfully.";
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result.AddError(StatusCode.ServerError, "Exception", ex.Message);
+                return result;
+            }
+        }
+
+        public async Task<OperationResult<UserResponse>> GetUserByName(string name)
+        {
+            var result = new OperationResult<UserResponse>();
+
+            try
+            {
+                // Query the user by name from the database asynchronously
+                var user = await _unitOfWork.UserRepository.GetUserByNameAsync(name);
+
+                if (user == null)
+                {
+                    // Handle case where user is not found
+                    result.AddError(StatusCode.NotFound, "User", $"User '{name}' not found.");
+                    return result;
+                }
+
+                // Map the User entity to UserResponse view model
+                var userResponse = _mapper.Map<UserResponse>(user);
+
+                // Set payload and message for successful retrieval
+                result.Payload = userResponse;
+                result.Message = "User retrieved successfully.";
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                string error = ErrorUtil.GetErrorString("Exception", ex.Message);
+                // Log or debug the error
+                Console.WriteLine($"Error occurred: {error}");
+
+                // Add error to result
+                result.AddError(StatusCode.ServerError, "Exception", error);
+                return result;
             }
         }
 

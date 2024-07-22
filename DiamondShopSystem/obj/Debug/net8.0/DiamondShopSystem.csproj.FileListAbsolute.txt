@@ -1,366 +1,195 @@
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.AssemblyReference.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.GeneratedMSBuildEditorConfig.editorconfig
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfoInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfo.cs
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CoreCompileInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\appsettings.Development.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\appsettings.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.exe
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.deps.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.runtimeconfig.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Azure.Core.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Azure.Identity.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.SqlServer.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Humanizer.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\LinqKit.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\LinqKit.Core.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\MediatR.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\MediatR.Contracts.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.OpenApi.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Mono.TextTemplating.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Scrutor.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.CodeDom.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Convention.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Hosting.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Runtime.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Composition.TypedParts.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Drawing.Common.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Memory.Data.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Runtime.Caching.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Security.Permissions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\System.Windows.Extensions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Service.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\Service.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.build.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.development.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.DiamondShopSystem.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.DiamondShopSystem.props
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DiamondShopSystem.props
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DiamondShopSystem.props
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\scopedcss\bundle\DiamondShopSystem.styles.css
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CopyComplete
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\refint\DiamondShopSystem.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.genruntimeconfig.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\ref\DiamondShopSystem.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.xml
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cs
-E:\Ki 8\prn231\New folder\DiamondShopSystem\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.xml
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.AssemblyReference.cache
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.GeneratedMSBuildEditorConfig.editorconfig
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfoInputs.cache
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfo.cs
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CoreCompileInputs.cache
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cs
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cache
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.sourcelink.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\refint\DiamondShopSystem.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.xml
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\appsettings.Development.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\appsettings.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.exe
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.deps.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.runtimeconfig.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.xml
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Azure.Core.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Azure.Identity.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.SqlServer.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Humanizer.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\LinqKit.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\LinqKit.Core.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\MediatR.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\MediatR.Contracts.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.AspNetCore.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Scrutor.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.CodeDom.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Memory.Data.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Service.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Service.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.build.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.development.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.DiamondShopSystem.Microsoft.AspNetCore.StaticWebAssets.props
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.DiamondShopSystem.props
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DiamondShopSystem.props
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DiamondShopSystem.props
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.pack.json
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\scopedcss\bundle\DiamondShopSystem.styles.css
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondS.CBC4316F.Up2Date
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.genruntimeconfig.cache
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\ref\DiamondShopSystem.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.CommonProtos.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.Gax.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.Gax.Grpc.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.Auth.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.Core.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Firestore.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Firestore.V1.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Location.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.LongRunning.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Protobuf.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Auth.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Core.Api.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Net.Client.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Net.Common.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Linq.Async.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Management.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
-D:\workspace\C#\prn231\final project\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\serviceAccountKey.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\appsettings.Development.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\appsettings.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\serviceAccountKey.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.exe
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.deps.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.runtimeconfig.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\DiamondShopSystem.xml
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Azure.Core.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Azure.Identity.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\EntityFramework.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.CommonProtos.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.Gax.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Api.Gax.Grpc.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.Auth.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Firestore.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Firestore.V1.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Cloud.Location.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.LongRunning.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Google.Protobuf.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Auth.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Core.Api.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Net.Client.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Grpc.Net.Common.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Humanizer.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\LinqKit.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\LinqKit.Core.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\MediatR.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.AspNetCore.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Scrutor.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.CodeDom.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Linq.Async.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Management.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Memory.Data.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Service.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\Service.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\bin\Debug\net8.0\ShopRepository.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.AssemblyReference.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfoInputs.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.AssemblyInfo.cs
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.csproj.CoreCompileInputs.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cs
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.MvcApplicationPartsAssemblyInfo.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.sourcelink.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.build.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.development.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.DiamondShopSystem.Microsoft.AspNetCore.StaticWebAssets.props
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.DiamondShopSystem.props
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DiamondShopSystem.props
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DiamondShopSystem.props
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\staticwebassets.pack.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\scopedcss\bundle\DiamondShopSystem.styles.css
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondS.CBC4316F.Up2Date
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\refint\DiamondShopSystem.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.xml
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\DiamondShopSystem.genruntimeconfig.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\DiamondShopSystem\obj\Debug\net8.0\ref\DiamondShopSystem.dll

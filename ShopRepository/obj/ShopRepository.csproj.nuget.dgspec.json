@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {}
+    "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
+    "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
+        "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
         "projectName": "ShopRepository",
-        "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
+        "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj",
         "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\obj\\",
+        "outputPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Software\\VS\\Shared\\NuGetPackages"

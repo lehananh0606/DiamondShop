@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.IServices;
+using Service.Services;
 using Service.ViewModels.Request;
 using Service.ViewModels.Request.Order;
 
@@ -49,6 +50,13 @@ namespace DiamondShopSystem.Controllers
             var response = await _orderService.CreateEntity(request);
             return response.IsError ? HandleErrorResponse(response.Errors) : Ok(response);
 
+        }
+
+        [HttpPut("order/delete/{id}")]
+        public async Task<IActionResult> UserComming(int id)
+        {
+            var response = await _orderService.DeleteOrder(id);
+            return response.IsError ? HandleErrorResponse(response.Errors) : Ok(response);
         }
     }
 }

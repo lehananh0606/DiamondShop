@@ -1,29 +1,15 @@
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\bin\Debug\net8.0\ShopRepository.deps.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\bin\Debug\net8.0\ShopRepository.runtimeconfig.json
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\bin\Debug\net8.0\ShopRepository.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\bin\Debug\net8.0\ShopRepository.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.AssemblyReference.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.GeneratedMSBuildEditorConfig.editorconfig
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfoInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfo.cs
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.CoreCompileInputs.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\refint\ShopRepository.dll
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.pdb
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ShopRepository.genruntimeconfig.cache
-E:\Ki 8\prn231\New folder\DiamondShopSystem\ShopRepository\obj\Debug\net8.0\ref\ShopRepository.dll
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.deps.json
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.runtimeconfig.json
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.dll
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.AssemblyReference.cache
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.GeneratedMSBuildEditorConfig.editorconfig
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfoInputs.cache
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfo.cs
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.CoreCompileInputs.cache
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.sourcelink.json
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.dll
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\refint\ShopRepository.dll
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.pdb
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.genruntimeconfig.cache
-D:\workspace\C#\prn231\final project\DiamondShop\ShopRepository\obj\Debug\net8.0\ref\ShopRepository.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.deps.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.runtimeconfig.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\bin\Debug\net8.0\ShopRepository.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.AssemblyReference.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfoInputs.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.AssemblyInfo.cs
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.csproj.CoreCompileInputs.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.sourcelink.json
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\refint\ShopRepository.dll
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.pdb
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ShopRepository.genruntimeconfig.cache
+D:\workspace\C#\prn231\final project\box\DiamondShop\ShopRepository\obj\Debug\net8.0\ref\ShopRepository.dll

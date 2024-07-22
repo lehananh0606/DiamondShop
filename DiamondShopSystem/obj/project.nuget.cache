@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSDK7VJaiJs=",
+  "dgSpecHash": "9Cn2X+66NNg=",
   "success": true,
-  "projectFilePath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
+  "projectFilePath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WIN10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\WIN10\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

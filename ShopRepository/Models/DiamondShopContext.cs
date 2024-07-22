@@ -34,6 +34,7 @@ public partial class DiamondShopContext : DbContext
 
     public virtual DbSet<Wallet> Wallets { get; set; }
 
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // Chỉ cấu hình nếu options chưa được cấu hình

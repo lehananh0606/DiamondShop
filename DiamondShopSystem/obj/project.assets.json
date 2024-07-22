@@ -6899,11 +6899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
+      "projectUniqueName": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
       "projectName": "DiamondShopSystem",
-      "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
+      "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\DiamondShopSystem\\DiamondShopSystem.csproj",
       "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\DiamondShopSystem\\obj\\",
+      "outputPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\DiamondShopSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Software\\VS\\Shared\\NuGetPackages"
@@ -6925,11 +6925,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj": {
-              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj"
+            "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\Service.csproj": {
+              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\Service.csproj"
             },
-            "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
-              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\ShopRepository\\ShopRepository.csproj"
+            "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj": {
+              "projectPath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\ShopRepository\\ShopRepository.csproj"
             }
           }
         }

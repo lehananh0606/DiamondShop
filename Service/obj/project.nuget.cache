@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QXNn1vY/7Go=",
+  "dgSpecHash": "GrOryTR7/Kg=",
   "success": true,
-  "projectFilePath": "D:\\workspace\\C#\\prn231\\final project\\DiamondShop\\Service\\Service.csproj",
+  "projectFilePath": "D:\\workspace\\C#\\prn231\\final project\\box\\DiamondShop\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WIN10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\WIN10\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

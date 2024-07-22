@@ -13,6 +13,8 @@ namespace ShopRepository.Repositories.UnitOfWork
 {
     public interface IUnitOfWork
     {
+
+
         public void Commit();
         public Task CommitAsync();
     }
