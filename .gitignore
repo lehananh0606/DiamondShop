@@ -366,3 +366,6 @@ bin
 obj
 
 .env
+DiamondShopSystem/obj/
+Service/obj/
+ShopRepository/obj/
