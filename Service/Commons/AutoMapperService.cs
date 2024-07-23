@@ -20,12 +20,20 @@ namespace Service.Commons
         public AutoMapperService(
         )
         {
-            CreateMap<User, AccountResponse>().ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName));
+            CreateMap<User, AccountResponse>().ForMember(dest => dest.RoleName, opt => opt.MapFrom(src => src.Role.RoleName));
             CreateMap<User, UserResponse>()
-                .ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
-                .ForMember(dept => dept.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
+                .ForMember(dest => dest.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
+
             CreateMap<AccountRequest, User>();
-            CreateMap<CreateUserRequest, User>();
+            CreateMap<CreateUserRequest, User>()
+             .ForMember(dest => dest.UserId, opt => opt.Ignore())
+             .ForMember(dest => dest.Bids, opt => opt.Ignore())
+             .ForMember(dest => dest.Notifications, opt => opt.Ignore())
+             .ForMember(dest => dest.Orders, opt => opt.Ignore())
+             .ForMember(dest => dest.Role, opt => opt.Ignore())
+             .ForMember(dest => dest.Wallet, opt => opt.Ignore());
+
             CreateMap<UpdateUserRequest, User>();
 
             // Token Mappings

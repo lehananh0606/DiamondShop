@@ -55,6 +55,7 @@ namespace Service.ViewModels.Request.User
         public bool IsDeleted { get; set; } = false;
 
         public int Status { get; set; }
+        public int RoleId { get; set; }
 
         
         public int ModifiedVersion { get; set; }

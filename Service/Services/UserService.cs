@@ -37,43 +37,30 @@ namespace Service.Services
         {
             try
             {
-                // Kiểm tra xem danh sách claims có chứa phần tử nào với kiểu ClaimTypes.Email không
+                // Lấy thông tin Claim về email đăng ký từ danh sách claims
                 var registeredEmailClaim = claims.FirstOrDefault(x => x.Type == ClaimTypes.Email);
                 if (registeredEmailClaim == null)
                 {
                     throw new Exception("No email claim found.");
                 }
-
-                // Lấy email từ phần tử claim có kiểu ClaimTypes.Email
                 string email = registeredEmailClaim.Value;
 
                 // Khởi tạo các biến để lưu số lượng Users và danh sách Users
-                int numberItems = 0;
-                List<User> users = null;
+                int numberItems;
+                List<User> users;
 
-                // Kiểm tra xem getUserRequest có giá trị null không
-                if (getUserRequest == null)
+                // Kiểm tra và lấy số lượng và danh sách Users dựa trên yêu cầu từ getUserRequest
+                if (!string.IsNullOrWhiteSpace(getUserRequest.SearchValue))
                 {
-                    // Truy vấn tất cả người dùng từ cơ sở dữ liệu
-                    numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(null);
-                    users = await _unitOfWork.UserRepository.GetUsersAsync(null, 1, 5, null, null);
+                    numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(getUserRequest.SearchValue);
+                    users = await _unitOfWork.UserRepository.GetUsersAsync(getUserRequest.SearchValue, getUserRequest.CurrentPage.Value, getUserRequest.ItemsPerPage.Value,
+                                                                           GetSortBy(getUserRequest.SortBy, "asc"), GetSortBy(getUserRequest.SortBy, "desc"));
                 }
                 else
                 {
-                    // Kiểm tra và lấy số lượng và danh sách Users dựa trên yêu cầu từ getUserRequest
-                    if (!string.IsNullOrWhiteSpace(getUserRequest.SearchValue))
-                    {
-                        numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(getUserRequest.SearchValue);
-
-                        users = await _unitOfWork.UserRepository.GetUsersAsync(getUserRequest.SearchValue, getUserRequest.CurrentPage.Value, getUserRequest.ItemsPerPage.Value,
-                                                                               GetSortBy(getUserRequest.SortBy, "asc"), GetSortBy(getUserRequest.SortBy, "desc"));
-                    }
-                    else
-                    {
-                        numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(null);
-                        users = await _unitOfWork.UserRepository.GetUsersAsync(null, getUserRequest.CurrentPage.Value, getUserRequest.ItemsPerPage.Value,
-                                                                               GetSortBy(getUserRequest.SortBy, "asc"), GetSortBy(getUserRequest.SortBy, "desc"));
-                    }
+                    numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(null);
+                    users = await _unitOfWork.UserRepository.GetUsersAsync(null, getUserRequest.CurrentPage.Value, getUserRequest.ItemsPerPage.Value,
+                                                                           GetSortBy(getUserRequest.SortBy, "asc"), GetSortBy(getUserRequest.SortBy, "desc"));
                 }
 
                 // Tính toán tổng số trang dựa trên số lượng Users và số lượng hiển thị trên mỗi trang
@@ -92,60 +79,13 @@ namespace Service.Services
             }
             catch (Exception ex)
             {
+                // Log the exception or handle it in a more specific way
                 string error = ErrorUtil.GetErrorString("Exception", ex.Message);
                 throw new Exception(error);
             }
         }
 
 
-
-        public async Task<GetUserResponse> GetUsersAsync(GetUserRequest getUsersRequest, IEnumerable<Claim> claims)
-        {
-            try
-            {
-                // Lấy thông tin Claim về email đăng ký từ danh sách claims
-                Claim registeredEmailClaim = claims.First(x => x.Type == ClaimTypes.Email);
-                string email = registeredEmailClaim.Value;
-
-                // Khởi tạo các biến để lưu số lượng Users và danh sách Users
-                int numberItems = 0;
-                List<User> users = null;
-
-                // Kiểm tra và lấy số lượng và danh sách Users dựa trên yêu cầu từ getUsersRequest
-                if (!string.IsNullOrWhiteSpace(getUsersRequest.SearchValue))
-                {
-                    numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(getUsersRequest.SearchValue);
-
-                    users = await _unitOfWork.UserRepository.GetUsersAsync(getUsersRequest.SearchValue, getUsersRequest.CurrentPage.Value, getUsersRequest.ItemsPerPage.Value,
-                                                                           GetSortBy(getUsersRequest.SortBy, "asc"), GetSortBy(getUsersRequest.SortBy, "desc"));
-                }
-                else
-                {
-                    numberItems = await _unitOfWork.UserRepository.GetNumberUsersAsync(null);
-                    users = await _unitOfWork.UserRepository.GetUsersAsync(null, getUsersRequest.CurrentPage.Value, getUsersRequest.ItemsPerPage.Value,
-                                                                           GetSortBy(getUsersRequest.SortBy, "asc"), GetSortBy(getUsersRequest.SortBy, "desc"));
-                }
-
-                // Tính toán tổng số trang dựa trên số lượng Users và số lượng hiển thị trên mỗi trang
-                int totalPages = numberItems > 0 ? (int)Math.Ceiling((decimal)numberItems / getUsersRequest.ItemsPerPage.Value) : 0;
-
-                // Chuyển đổi danh sách Users sang đối tượng GetUserResponse
-                List<UserResponse> getUserResponses = _mapper.Map<List<UserResponse>>(users);
-
-                // Trả về đối tượng GetUsersResponse
-                return new GetUserResponse()
-                {
-                    TotalPages = totalPages,
-                    NumberItems = numberItems,
-                    Users = getUserResponses
-                };
-            }
-            catch (Exception ex)
-            {
-                string error = ErrorUtil.GetErrorString("Exception", ex.Message);
-                throw new Exception(error);
-            }
-        }
 
         // Phương thức hỗ trợ để lấy chuỗi sắp xếp theo chiều tăng hoặc giảm dần
         private string? GetSortBy(string? sortBy, string direction)
@@ -165,16 +105,26 @@ namespace Service.Services
         {
             try
             {
-                
                 var newUser = _mapper.Map<User>(createUserRequest);
+
+                // Log the new user details
+                Console.WriteLine($"Creating user: {newUser.Email}, {newUser.Name}");
+
                 await _unitOfWork.UserRepository.CreateUserAsync(newUser);
                 await _unitOfWork.CommitAsync();
             }
             catch (Exception ex)
-            {               
-                throw new Exception("Error creating new user: " + ex.Message);
+            {
+                // Log the full exception details
+                var message = $"Error creating new user: {ex.Message}";
+                if (ex.InnerException != null)
+                {
+                    message += $" | Inner Exception: {ex.InnerException.Message}";
+                }
+                throw new Exception(message);
             }
         }
+
 
 
         public async Task UpdateUserAsync(int id, UpdateUserRequest updateUserRequest, IEnumerable<Claim> claims)
