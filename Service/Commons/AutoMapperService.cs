@@ -21,43 +21,39 @@ namespace Service.Commons
         )
         {
             CreateMap<User, AccountResponse>().ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName));
-            CreateMap<User, UserResponse>().ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
-                                                    .ForMember(dept => dept.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
-
+            CreateMap<User, UserResponse>()
+                .ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
+                .ForMember(dept => dept.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
             CreateMap<AccountRequest, User>();
             CreateMap<CreateUserRequest, User>();
             CreateMap<UpdateUserRequest, User>();
 
-           
-
-
-
+            // Token Mappings
             CreateMap<AccountTokenRequest, AccountToken>();
             CreateMap<AccountToken, AccountTokenRequest>();
 
+            // Bid Mappings
             CreateMap<BidRequest, Bid>();
             CreateMap<Bid, BidResponse>();
 
+            // Notification Mappings
             CreateMap<NotificationRequest, Notification>();
             CreateMap<Notification, NotificationResponse>();
 
-           
-
-
-
+            // Product Image Mappings
             CreateMap<ProductImageRequest, ProductImage>();
             CreateMap<ProductImage, ProductImageResponse>();
 
+            // Transaction Mappings
             CreateMap<TransactionRequest, Transaction>();
             CreateMap<Transaction, TransactionResponse>();
 
-            CreateMap<CreateUserRequest, User>();
-            CreateMap<User, UserResponse>();
-
+            // Wallet Mappings
             CreateMap<WalletRequest, Wallet>();
             CreateMap<Wallet, WalletResponse>();
-            
-            //Auction
+
+            // Auction Mappings
+            CreateMap<Auction, AuctionRequest>();
             CreateMap<Auction, AuctionResponse>();
             CreateMap<CreateAuctionRequest, Auction>();
             CreateMap<StaffUpdate, Auction>();
@@ -65,16 +61,15 @@ namespace Service.Commons
             CreateMap<StaffConfirmRequest, Auction>();
             CreateMap<UserWaitingRequest, Auction>();
             CreateMap<UserComming, Auction>();
-
             CreateMap<AuctionResponse, Auction>();
-            
 
-            //Order
+
+            // Order Mappings
             CreateMap<Order, OrderResponse>();
             CreateMap<CreateOrderRequest, Order>();
             CreateMap<UpdateOrderRequest, Order>();
 
-            //Biding
+            // Bid Mappings (Duplicate, avoid redundancy)
             CreateMap<Bid, BidResponse>();
             CreateMap<CreateBidRequest, Bid>();
             CreateMap<UpdateBidRequest, Bid>();

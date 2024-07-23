@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace ShopRepository.Repositories.Repository
 {
-    public class UserRepository
+    public class UserRepository 
     {
         private readonly DiamondShopContext _dbContext;
 
@@ -66,6 +66,7 @@ namespace ShopRepository.Repositories.Repository
             }
         }
 
+    
         public async Task<User> GetUserAsyncUpdate(int accountId)
         {
             try

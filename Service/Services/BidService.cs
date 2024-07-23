@@ -216,12 +216,8 @@ namespace Service.Services
             try
             {
                 // Fetch the auction without tracking
-                var auctionResult = await _auctionService.GetById(request.AuctionId);
-                if (auctionResult.IsError || auctionResult.Payload == null)
-                {
-                    throw new NotFoundException("Auction not found.");
-                }
-                var auctionResponse = auctionResult.Payload;
+                var auctionResponse = await _unitOfWork.AuctionRepository.GetByIdAsync(request.AuctionId);
+               
 
                 // Fetch the existing bid without tracking
                 var existingBid = await _bidRepository.GetByIdAsync(id);
@@ -235,8 +231,8 @@ namespace Service.Services
                 var top1Bid = await _bidRepository.FindTop1ByAuctionId(request.AuctionId);
 
                 // Check if auction is in bidding status
-                var auctionStatus = (AuctionEnums.Status)auctionResponse.Status;
-                if (auctionStatus != AuctionEnums.Status.BIDDING)
+                
+                if (auctionResponse.Status != (int)AuctionEnums.Status.BIDDING)
                 {
                     throw new BadRequestException("Auction not available for bidding.");
                 }
@@ -294,6 +290,9 @@ namespace Service.Services
                 // Update the bid entity
                 existingBid.BiddingPrice = request.BiddingPrice;
                 existingBid.UpdateAt = DateTime.UtcNow; // Update timestamp
+                auctionResponse.BiddingPrice = (float)existingBid.BiddingPrice;
+                await _unitOfWork.AuctionRepository.UpdateAsync(auctionResponse);
+
 
                 // Save changes
                 await _unitOfWork.BidRepository.UpdateAsync(existingBid);
@@ -304,17 +303,9 @@ namespace Service.Services
                 await _unitOfWork.BidRepository.UpdateEntityAsync(userBid);
 
                 // Update the auction's BiddingPrice if the bid update is successful
-                var auctionUpdateResult = await _auctionService.UpdateAuction(new Auction
-                {
-                    AuctionId = request.AuctionId,
-                    BiddingPrice = request.BiddingPrice // Assuming you want to set the new bidding price
-                });
-
-                if (auctionUpdateResult.IsError)
-                {
-                    result.AddError(StatusCode.InternalServerError, "AuctionUpdate", "Failed to update auction.");
-                    return result;
-                }
+                
+                
+               
 
                 var bidResponse = _mapper.Map<BidResponse>(existingBid); // Mapping if using AutoMapper
                 result.Payload = bidResponse;
@@ -409,7 +400,11 @@ namespace Service.Services
                             Wallet = wallet,
                             Amount = auction.DepositPrice,
                             Status = OrderEnums.Status.APPROVE.ToString(),
-                            PaymentMethod = PaymentMethod.DEPOSIT.ToString(),
+                            Resource = "Wallet",
+                            PaymentMethod = "Wallet",
+                            Content = "Deposit to register auction",
+                            CreatedBy = user.Name,
+                            TransactionType = PaymentMethod.DEPOSIT.ToString(),
                             TransactionCode = tranCode
                         };
                         await _unitOfWork.TransactionRepository.AddAsync(transaction);

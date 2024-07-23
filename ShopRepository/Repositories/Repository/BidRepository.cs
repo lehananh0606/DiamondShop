@@ -17,11 +17,24 @@ namespace ShopRepository.Repositories.Repository
             return await _dbSet
                 .FirstOrDefaultAsync(b => b.UserId == userId && b.AuctionId == auctionId);
         }
+        public async Task<Bid> FindByAuctionId(int auctionId)
+        {
+            return await _dbSet
+                .FirstOrDefaultAsync(b => b.AuctionId == auctionId);
+        }
+     
 
         public async Task<Bid> FindTop1ByAuctionId(int auctionId)
         {
             return await _dbSet
                 .Where(b => b.AuctionId == auctionId && b.IsTop1 == true)
+                .OrderByDescending(b => b.BiddingPrice)
+                .FirstOrDefaultAsync();
+        }
+        public async Task<Bid> FindNotTop1ByAuctionId(int auctionId)
+        {
+            return await _dbSet
+                .Where(b => b.AuctionId == auctionId && b.IsTop1 == false)
                 .OrderByDescending(b => b.BiddingPrice)
                 .FirstOrDefaultAsync();
         }

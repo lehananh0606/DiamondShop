@@ -16,7 +16,8 @@ namespace Service.ViewModels.Response.User
         public string ImageUrl { get; set; }
         public DateTime Dob { get; set; }
         public string Status { get; set; }
-
+        public string Phone { get; set; }
+        public string Address { get; set; }
         public string RoleName { get; set; }
         public bool IsBanned { get; set; }
         public DateTime ExpiredAt { get; set; }
