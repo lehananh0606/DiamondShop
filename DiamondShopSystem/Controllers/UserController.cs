@@ -26,14 +26,7 @@ namespace DiamondShopSystem.Controllers
                 _userService = userService;
             }
 
-        [HttpGet]
-        //[ProducesResponseType(typeof(GetUserResponse), StatusCodes.Status200OK)]
-        //[ProducesResponseType(typeof(Error), StatusCodes.Status400BadRequest)]
-        //[ProducesResponseType(typeof(Error), StatusCodes.Status404NotFound)]
-        //[ProducesResponseType(typeof(Error), StatusCodes.Status500InternalServerError)]
-        //[Produces(MediaTypeConstant.ApplicationJson)]
-        //[HttpGet(APIEndPointConstant.Customer.Cu)]
-        //[PermissionAuthorize(RoleConstants.Admin)]
+        [HttpGet] 
         public async Task<ActionResult<GetUserResponse>> GetUsersAsync([FromQuery] GetUserRequest getUsersRequest)
         {
             try

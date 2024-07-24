@@ -16,6 +16,6 @@ namespace Service.IServices
         Task<VnPaymentResponseModel> PaymentExecute(IQueryCollection collections);
 
         Task<OperationResult<Transaction>> DepositPayment(VnPaymentResponseModel response);
-
+        Task<OperationResult<bool>> PayOrderWithWalletBalance(int orderId, int userId);
     }
 }

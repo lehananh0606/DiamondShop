@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShopRepository.Repositories.Repository
 {
@@ -15,6 +16,11 @@ namespace ShopRepository.Repositories.Repository
     {
         public OrderRepository(DiamondShopContext context) : base(context)
         {
+        }
+        public async Task<Order> GetByAuctionIdAsync(int auctionId)
+        {
+            return await _dbSet
+                 .FirstOrDefaultAsync(b => b.AuctionId == auctionId);
         }
     }
 }

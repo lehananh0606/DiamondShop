@@ -10,6 +10,11 @@ using Service.IServices;
 using ShopRepository.Models;
 using Service.Contants;
 using Google.Api;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Service.Exceptions;
+using System.ComponentModel.DataAnnotations;
+using ShopRepository.Enums;
+using Service.Utils;
 
 namespace Service.Quartz
 {
@@ -94,51 +99,135 @@ namespace Service.Quartz
             await _unitOfWork.SaveChangesAsync();
 
         }
-        
+
         private async Task ExpiredBiddingAuction()
         {
             var timeThreshold = DateTime.Now;
-
             var statuses = new List<int?> { 6 };
-            
+
             try
             {
                 var auctions = _unitOfWork.AuctionRepository.Get(
-                   filter: u => statuses.Contains(u.Status)
-                   && u.IsActived == true
-                   && u.IsRejected == false
-                   && u.EndDate <= timeThreshold,
-                   includeProperties: "Bids,ProductImages",
-                   pageSize: -1
+                    filter: u => statuses.Contains(u.Status)
+                    && u.IsActived == true
+                    && u.IsRejected == false
+                    && u.EndDate <= timeThreshold,
+                    includeProperties: "Bids,ProductImages",
+                    pageSize: -1
                 );
 
                 foreach (var auction in auctions)
                 {
+                    await ProcessAuction(auction);
+                }
 
-                    string msg = "update auction " + auction.AuctionId
-                        + " statusfrom: " + auction.Status;
+                await _unitOfWork.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+        }
 
-                    auction.Status = auction.Status + 1;
+        private async Task ProcessAuction(Auction auction)
+        {
+            string msg = "update auction " + auction.AuctionId
+                         + " status from: " + auction.Status;
 
-                    msg += " statusTo: " + auction.Status;
+            auction.Status += 1;
 
-                    auction.UpdateAt = DateTime.Now;
+            msg += " status to: " + auction.Status;
 
-                    Console.WriteLine(msg);
+            auction.UpdateAt = DateTime.Now;
 
-                    await _unitOfWork.AuctionRepository.UpdateAsync(auction);
-                    await _firebaseAuctionService.SaveAuction(auction, auction.AuctionId, AUCTIONCONSTANT.COLLECTIONFIREBASE.AUCTIONS);
-                    
+            Console.WriteLine(msg);
+
+            var top1Bid = await _unitOfWork.BidRepository.FindTop1ByAuctionId(auction.AuctionId);
+            auction.EndPrice = top1Bid?.BiddingPrice;
+
+            if (top1Bid != null)
+            {
+                var user = await _unitOfWork.UserRepository.GetByIdAsync((int)top1Bid.UserId);
+                if (user == null)
+                {
+                    throw new NotFoundException("User not found");
+                }
+
+                // Check if an order already exists for this AuctionID
+                var existingOrder = await _unitOfWork.OrderRepository.GetByAuctionIdAsync(auction.AuctionId);
+                if (existingOrder == null)
+                {
+                    var order = new Order
+                    {
+                        Total = auction.EndPrice,
+                        Phone = user.Phone,
+                        Address = user.Address,
+                        CreateAt = DateTime.Now,
+                        UpdateAt = DateTime.Now,
+                        CreateBy = "System",
+                        ModifiedBy = "System",
+                        PaymentMethod = "Wallet",
+                        IsExpired = false,
+                        ExpiredAt = DateTime.Now.AddHours(24),
+                        AuctionTitle = auction.Title,
+                        AuctionName = auction.ProductName,
+                        AuctionCode = auction.ProductCode,
+                        Quantity = auction.Quantity,
+                        UserName = user.Name,
+                        IsDeleted = false,
+                        UserId = top1Bid.UserId,
+                        AuctionId = top1Bid.AuctionId,
+                        Status = (int?)OrderEnums.Status.PENDING
+                    };
+
+                    try
+                    {
+                        await _unitOfWork.OrderRepository.AddAsync(order);
+                        Console.WriteLine($"Order created successfully for AuctionID: {auction.AuctionId}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error creating order for AuctionID: {auction.AuctionId} - {ex.Message}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Order already exists for AuctionID: {auction.AuctionId}");
                 }
             }
-            catch( Exception e)
+
+            var bidNotWin = await _unitOfWork.BidRepository.FindNotTop1ByAuctionId(auction.AuctionId);
+            if (bidNotWin != null)
             {
-                Console.WriteLine("Exception: ", e.Message);
+                var userNotWin = await _unitOfWork.UserRepository.GetByIdAsync((int)bidNotWin.UserId);
+                if (userNotWin != null)
+                {
+                    var wallet = await _unitOfWork.WalletRepository.GetWalletByAccountIdAsync(userNotWin.UserId);
+                    var tranCode = GenerateCodeUtils.GenerateCode4Transaction(
+                        TypeTrans.HT, auction.ProductCode, userNotWin.UserId);
+
+                    var transaction = new ShopRepository.Models.Transaction
+                    {
+                        Wallet = wallet,
+                        Amount = auction.StartPrice,
+                        Status = OrderEnums.Status.APPROVE.ToString(),
+                        Resource = "System",
+                        PaymentMethod = "Wallet",
+                        Content = "Refund deposit to register auction",
+                        CreatedBy = "System",
+                        TransactionType = PaymentMethod.DEPOSIT.ToString(),
+                        TransactionCode = tranCode
+                    };
+                    await _unitOfWork.TransactionRepository.AddAsync(transaction);
+                    wallet.Balance += auction.StartPrice;
+                    await _unitOfWork.WalletRepository.UpdateAsync(wallet);
+                }
             }
 
-            await _unitOfWork.SaveChangesAsync();
-
+            await _unitOfWork.AuctionRepository.UpdateAsync(auction);
+            await _firebaseAuctionService.SaveAuction(auction, auction.AuctionId, AUCTIONCONSTANT.COLLECTIONFIREBASE.AUCTIONS);
         }
+
 
     }
 }

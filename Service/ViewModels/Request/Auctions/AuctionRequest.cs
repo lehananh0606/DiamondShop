@@ -68,7 +68,7 @@ public class AuctionRequest
     [FirestoreProperty]
     public int? PauseDuration { get; set; }
     [FirestoreProperty]
-    public virtual ICollection<Bid> Bids { get; set; } = new List<Bid>();
+    public virtual ICollection<ShopRepository.Models.Bid> Bids { get; set; } = new List<ShopRepository.Models.Bid>();
 
     [FirestoreProperty]
     public virtual ICollection<ProductImage> ProductImages { get; set; } = new List<ProductImage>();

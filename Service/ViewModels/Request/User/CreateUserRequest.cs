@@ -24,6 +24,12 @@ namespace Service.ViewModels.Request.User
         [Required]
         [StringLength(100, MinimumLength = 6)]
         public string Password { get; set; }
+        [Required]
+        [RegularExpression(@"^0\d{10}$", ErrorMessage = "Phone must start with 0 and be 11 digits long.")]
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "Phone must be 11 characters long.")]
+        public string Phone {  get; set; }
+        [Required]
+        public string Address { get; set; }
 
         [Url]
         public string ImageUrl { get; set; }
@@ -49,6 +55,7 @@ namespace Service.ViewModels.Request.User
         public bool IsDeleted { get; set; } = false;
 
         public int Status { get; set; }
+        public int RoleId { get; set; }
 
         
         public int ModifiedVersion { get; set; }

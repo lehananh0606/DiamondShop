@@ -18,6 +18,7 @@ namespace Service.IServices
         public Task<GetUserResponse> GetUserAsync(GetUserRequest getUserRequest, IEnumerable<Claim> claims);
         // public Task<UserResponse> GetCashierReportAsync(IEnumerable<Claim> claims);
         public Task<UserResponse> GetAccountAsync(int id, IEnumerable<Claim> claims);
+        
         public Task<OperationResult<UserResponse>> GetUserByName(string name);
         public Task<OperationResult<UserResponse>> GetUserByCreatedBy(string createdBy);
         public Task CreateUserAsync(CreateUserRequest createUserRequest, IEnumerable<Claim> claims);

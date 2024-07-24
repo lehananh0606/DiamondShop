@@ -25,7 +25,14 @@ namespace Service.ViewModels.Request.Order
         public string AuctionCode { get; set; }
         [Required]
         public int Quantity { get; set; }
+        public float Total {  get; set; }
+        public string UserName { get; set; }
+        public bool IsDeleted { get; set; }
+        public int Status { get; set; }
+        public int UserId { get; set; }
+        public int AuctionId { get; set; }
 
+        public bool IsExpired { get; set; }
         public string Note { get; set; }
 
         [JsonIgnore]

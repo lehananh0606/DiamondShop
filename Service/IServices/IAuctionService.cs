@@ -7,6 +7,7 @@ using Service.Commons;
 using Service.ViewModels.Request;
 using Service.ViewModels.Request.Auctions;
 using Service.ViewModels.Response;
+using ShopRepository.Models;
 
 namespace Service.IServices
 {
@@ -22,6 +23,7 @@ namespace Service.IServices
         public Task<OperationResult<bool>> StaffConfirm(int id, StaffConfirmRequest request);
         public Task<OperationResult<bool>> UserWaiting(int id);
         public Task<OperationResult<bool>> UserComming(int id);
+        public Task<OperationResult<bool>> UpdateAuction(Auction auction);
 
     }
 }

@@ -9,6 +9,7 @@ using Service.ViewModels.Request.User;
 using Service.ViewModels.Response.User;
 using Service.ViewModels.Request.Auctions;
 using Service.ViewModels.Request.Order;
+using Service.ViewModels.Request.Bid;
 
 
 namespace Service.Commons
@@ -19,44 +20,48 @@ namespace Service.Commons
         public AutoMapperService(
         )
         {
-            CreateMap<User, AccountResponse>().ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName));
-            CreateMap<User, UserResponse>().ForMember(dept => dept.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
-                                                    .ForMember(dept => dept.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
+            CreateMap<User, AccountResponse>().ForMember(dest => dest.RoleName, opt => opt.MapFrom(src => src.Role.RoleName));
+            CreateMap<User, UserResponse>()
+                .ForMember(dest => dest.RoleName, opt => opt.MapFrom(src => src.Role.RoleName))
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => StatusUtils.ChangeUserStatus((int)src.Status)));
 
             CreateMap<AccountRequest, User>();
-            CreateMap<CreateUserRequest, User>();
+            CreateMap<CreateUserRequest, User>()
+             .ForMember(dest => dest.UserId, opt => opt.Ignore())
+             .ForMember(dest => dest.Bids, opt => opt.Ignore())
+             .ForMember(dest => dest.Notifications, opt => opt.Ignore())
+             .ForMember(dest => dest.Orders, opt => opt.Ignore())
+             .ForMember(dest => dest.Role, opt => opt.Ignore())
+             .ForMember(dest => dest.Wallet, opt => opt.Ignore());
+
             CreateMap<UpdateUserRequest, User>();
 
-           
-
-
-
+            // Token Mappings
             CreateMap<AccountTokenRequest, AccountToken>();
             CreateMap<AccountToken, AccountTokenRequest>();
 
+            // Bid Mappings
             CreateMap<BidRequest, Bid>();
             CreateMap<Bid, BidResponse>();
 
+            // Notification Mappings
             CreateMap<NotificationRequest, Notification>();
             CreateMap<Notification, NotificationResponse>();
 
-           
-
-
-
+            // Product Image Mappings
             CreateMap<ProductImageRequest, ProductImage>();
             CreateMap<ProductImage, ProductImageResponse>();
 
+            // Transaction Mappings
             CreateMap<TransactionRequest, Transaction>();
             CreateMap<Transaction, TransactionResponse>();
 
-            CreateMap<CreateUserRequest, User>();
-            CreateMap<User, UserResponse>();
-
+            // Wallet Mappings
             CreateMap<WalletRequest, Wallet>();
             CreateMap<Wallet, WalletResponse>();
-            
-            //Auction
+
+            // Auction Mappings
+            CreateMap<Auction, AuctionRequest>();
             CreateMap<Auction, AuctionResponse>();
             CreateMap<CreateAuctionRequest, Auction>();
             CreateMap<StaffUpdate, Auction>();
@@ -64,19 +69,18 @@ namespace Service.Commons
             CreateMap<StaffConfirmRequest, Auction>();
             CreateMap<UserWaitingRequest, Auction>();
             CreateMap<UserComming, Auction>();
+            CreateMap<AuctionResponse, Auction>();
 
-            CreateMap<Auction, AuctionRequest>().ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.HasValue ? src.EndDate.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
-                .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.HasValue ? src.StartDate.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
-                .ForMember(dest => dest.CreateAt, opt => opt.MapFrom(src => src.CreateAt.HasValue ? src.CreateAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
-                .ForMember(dest => dest.UpdateAt, opt => opt.MapFrom(src => src.UpdateAt.HasValue ? src.UpdateAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
-                .ForMember(dest => dest.RemindAt, opt => opt.MapFrom(src => src.RemindAt.HasValue ? src.RemindAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null))
-                .ForMember(dest => dest.ExpiredAt, opt => opt.MapFrom(src => src.ExpiredAt.HasValue ? src.ExpiredAt.Value.ToString("yyyy-MM-dd'T'HH:mm:ss") : null)).ReverseMap();
 
-            //Order
+            // Order Mappings
             CreateMap<Order, OrderResponse>();
             CreateMap<CreateOrderRequest, Order>();
             CreateMap<UpdateOrderRequest, Order>();
 
+            // Bid Mappings (Duplicate, avoid redundancy)
+            CreateMap<Bid, BidResponse>();
+            CreateMap<CreateBidRequest, Bid>();
+            CreateMap<UpdateBidRequest, Bid>();
         }
     }
 }

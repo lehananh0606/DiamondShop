@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Service.ViewModels.Request.Order
 {
-    public class GetAllOrder : PaginationRequest<ShopRepository.Models.Order>
+    public class GetAllBidRequest : PaginationRequest<ShopRepository.Models.Order>
     {
         public string? Search { get; set; }
 

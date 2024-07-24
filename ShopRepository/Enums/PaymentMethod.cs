@@ -10,5 +10,6 @@ namespace ShopRepository.Enums
     {
         WITHDRAW,
         DEPOSIT,
+        PAYMENT
     }
 }
