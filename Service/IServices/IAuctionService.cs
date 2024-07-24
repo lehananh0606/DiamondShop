@@ -23,7 +23,7 @@ namespace Service.IServices
         public Task<OperationResult<bool>> StaffConfirm(int id, StaffConfirmRequest request);
         public Task<OperationResult<bool>> UserWaiting(int id);
         public Task<OperationResult<bool>> UserComming(int id);
-        Task<OperationResult<bool>> UpdateAuction(Auction auction);
+        public Task<OperationResult<bool>> UpdateAuction(Auction auction);
 
     }
 }

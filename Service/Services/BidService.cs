@@ -315,7 +315,7 @@ namespace Service.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred in UpdateBid method");
-                result.AddError(StatusCode.InternalServerError, "Error", "An error occurred while updating the bid.");
+                result.AddError(StatusCode.ServerError, "Error", "An error occurred while updating the bid.");
                 return result;
             }
         }

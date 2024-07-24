@@ -17,25 +17,7 @@ namespace DiamondShopSystem.Controllers
             _logger = logger;
         }
 
-        //[HttpPost]
-        //[Route("create")]
-        //public async Task<IActionResult> CreateBid([FromBody] CreateBidRequest request)
-        //{
-        //    if (request == null)
-        //    {
-        //        return BadRequest("Invalid bid request.");
-        //    }
-
-        //    var result = await _bidService.CreateEntity(request);
-
-        //    if (result.IsError)
-        //    {
-        //        _logger.LogWarning("Bid creation failed: {Message}", result.Message);
-        //        return StatusCode((int)result.StatusCode, result);
-        //    }
-
-        //    return Ok(result);
-        //}
+       
 
         [HttpGet]
         [Route("get-all")]

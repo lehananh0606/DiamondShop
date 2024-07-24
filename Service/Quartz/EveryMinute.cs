@@ -196,15 +196,15 @@ namespace Service.Quartz
                 }
             }
 
-            var top2 = await _unitOfWork.BidRepository.FindNotTop1ByAuctionId(auction.AuctionId);
-            if (top2 != null)
+            var bidNotWin = await _unitOfWork.BidRepository.FindNotTop1ByAuctionId(auction.AuctionId);
+            if (bidNotWin != null)
             {
-                var userTop2 = await _unitOfWork.UserRepository.GetByIdAsync((int)top2.UserId);
-                if (userTop2 != null)
+                var userNotWin = await _unitOfWork.UserRepository.GetByIdAsync((int)bidNotWin.UserId);
+                if (userNotWin != null)
                 {
-                    var wallet = await _unitOfWork.WalletRepository.GetWalletByAccountIdAsync(userTop2.UserId);
+                    var wallet = await _unitOfWork.WalletRepository.GetWalletByAccountIdAsync(userNotWin.UserId);
                     var tranCode = GenerateCodeUtils.GenerateCode4Transaction(
-                        TypeTrans.HT, auction.ProductCode, userTop2.UserId);
+                        TypeTrans.HT, auction.ProductCode, userNotWin.UserId);
 
                     var transaction = new ShopRepository.Models.Transaction
                     {
