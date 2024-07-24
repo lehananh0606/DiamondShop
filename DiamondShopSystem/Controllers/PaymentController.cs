@@ -4,6 +4,7 @@ using Service.Commons;
 using Service.IServices;
 using Service.Utils;
 using Service.ViewModels.Request;
+using Service.ViewModels.Request.Order;
 using ShopRepository.Enums;
 using ShopRepository.Repositories.UnitOfWork;
 
@@ -48,7 +49,31 @@ namespace DiamondShopSystem.Controllers
             }
         }
 
+        [HttpPost("pay-order-with-wallet")]
+        public async Task<IActionResult> PayOrderWithWallet([FromBody] PayOrderRequestModel model)
+        {
+            if (model == null)
+            {
+                return BadRequest("Invalid request model.");
+            }
 
+            try
+            {
+                var result = await _vnPayService.PayOrderWithWalletBalance(model.OrderId, model.UserId);
+
+                if (result.IsError)
+                {
+                    return BadRequest(result);
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                string error = ErrorUtil.GetErrorString("Exception", ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, error);
+            }
+        }
 
 
         [HttpGet("payment-execute")]

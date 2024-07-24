@@ -35,6 +35,107 @@ namespace Service.Services
             _unitOfWork = (UnitOfWork)unitOfWork;
         }
 
+        public async Task<OperationResult<bool>> PayOrderWithWalletBalance(int orderId, int userId)
+        {
+            var result = new OperationResult<bool>();
+            var transaction = await _unitOfWork.BeginTransactionAsync();
+
+            try
+            {
+                // Retrieve the user
+                var user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
+                if (user == null)
+                {
+                    throw new NotFoundException("User not found");
+                }
+
+                // Retrieve the wallet of the user
+                var wallet = await _unitOfWork.WalletRepository.GetByIdAsync(userId);
+                if (wallet == null)
+                {
+                    throw new NotFoundException("Wallet not found");
+                }
+
+                // Retrieve the order
+                var order = await _unitOfWork.OrderRepository.GetByIdAsync(orderId);
+                if (order == null)
+                {
+                    throw new NotFoundException("Order not found.");
+                }
+                
+
+                if (order.Status == (int)OrderEnums.Status.CANCEL)
+                {
+                    throw new BadRequestException("Order has been expired.");
+                }
+
+                if (order.Status == (int)OrderEnums.Status.APPROVE)
+                {
+                    throw new BadRequestException("Order has already been paid.");
+                }
+
+                // Check if the wallet has sufficient balance
+                if (wallet.Balance < order.Total)
+                {
+                    throw new BadRequestException("Insufficient wallet balance.");
+                }
+
+                // Deduct the order amount from the wallet balance
+                wallet.Balance -= order.Total;
+                wallet.UpdatedAt = DateTime.Now;
+
+                await _unitOfWork.WalletRepository.UpdateAsync(wallet);
+
+                // Update order status to APPROVE
+                order.Status = (int)OrderEnums.Status.APPROVE;
+                order.UpdateAt = DateTime.Now;
+
+                await _unitOfWork.OrderRepository.UpdateAsync(order);
+
+                // Create transaction record
+                var transactionRecord = new Transaction
+                {
+                    WalletId = wallet.WalletId,
+                    Amount = order.Total,
+                    Status = PaymentEnum.SUCCESS.ToString(),
+                    TransactionType = PaymentMethod.PAYMENT.ToString(),
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                    Resource = "Wallet",
+                    IsDeleted = false,
+                    OrderId = order.OrderId,
+                    TransactionCode = "ORDPAY" + Utilss.RandomString(7)
+                };
+
+                await _unitOfWork.TransactionRepository.AddAsync(transactionRecord);
+
+                // Save all changes
+                await _unitOfWork.SaveChangesAsync();
+
+                await transaction.CommitAsync();
+                result.Payload = true;
+                result.IsError = false;
+                result.Message = "Order payment successful.";
+            }
+            catch (Exception e)
+            {
+                await transaction.RollbackAsync();
+                result.Message = e.Message;
+                result.IsError = true;
+                result.Errors.Add(new Error()
+                {
+                    StatusCode = (int)StatusCode.ServerError,
+                    Message = new List<ErrorDetail>
+            {
+                new ErrorDetail { FieldNameError = "Exception", DescriptionError = new List<string> { e.Message } }
+            }
+                });
+            }
+
+            return result;
+        }
+
+
         public async Task<string> CreatePaymentUrl(HttpContext context, VnPaymentRequestModel model
             )
         {
