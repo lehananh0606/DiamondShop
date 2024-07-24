@@ -215,8 +215,7 @@ namespace Service.Services
 
             try
             {
-                // Fetch the auction without tracking
-                var auctionResponse = await _unitOfWork.AuctionRepository.GetByIdAsync(request.AuctionId);
+              
                
 
                 // Fetch the existing bid without tracking
@@ -227,8 +226,10 @@ namespace Service.Services
                     return result;
                 }
 
+                // Fetch the auction without tracking
+                var auctionResponse = await _unitOfWork.AuctionRepository.GetByIdAsync((int)existingBid.AuctionId);
                 // Fetch the top bid without tracking
-                var top1Bid = await _bidRepository.FindTop1ByAuctionId(request.AuctionId);
+                var top1Bid = await _bidRepository.FindTop1ByAuctionId((int)existingBid.AuctionId);
 
                 // Check if auction is in bidding status
                 
@@ -238,14 +239,14 @@ namespace Service.Services
                 }
 
                 // Fetch the user
-                var userResult = await _unitOfWork.UserRepository.GetByIdAsync(request.UserId);
+                var userResult = await _unitOfWork.UserRepository.GetByIdAsync((int)existingBid.UserId);
                 if (userResult == null)
                 {
                     throw new NotAcceptableStatusException("User not found.");
                 }
 
                 // Check if the user has registered for the auction
-                var userBid = await _bidRepository.FindByUserIdAndAuctionId(request.UserId, request.AuctionId);
+                var userBid = await _bidRepository.FindByUserIdAndAuctionId((int)existingBid.UserId, (int)existingBid.AuctionId);
                 if (userBid == null)
                 {
                     throw new NotAcceptableStatusException("User must register to bid.");
@@ -398,12 +399,13 @@ namespace Service.Services
                         var transaction = new Transaction
                         {
                             Wallet = wallet,
-                            Amount = auction.DepositPrice,
+                            Amount = auction.StartPrice,
                             Status = OrderEnums.Status.APPROVE.ToString(),
                             Resource = "Wallet",
                             PaymentMethod = "Wallet",
                             Content = "Deposit to register auction",
                             CreatedBy = user.Name,
+                            IsDeleted = false,
                             TransactionType = PaymentMethod.DEPOSIT.ToString(),
                             TransactionCode = tranCode
                         };

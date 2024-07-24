@@ -11,9 +11,6 @@ namespace Service.ViewModels.Request.Bid
     {
         [Required]
         public float BiddingPrice { get; set; }
-        [Required]
-        public int UserId { get; set; }
-        [Required]
-        public int AuctionId { get; set; }
+       
     }
 }
